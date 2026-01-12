@@ -175,7 +175,7 @@ def evaluate_single_user(user_config, cache_mode="isolated"):
     logger.info(f"Evaluating User {user_config['user_id']} ({user_config['persona_type']}) - {cache_mode.upper()} mode")
     logger.info(f"Seed: {user_config['seed']}")
     logger.info(f"Description: {user_config['persona']['description']}")
-    logger.info(f"{'='*60}")
+     
     
     # Generate persona-specific workload
     questions, intra_repeats = generate_persona_workload(user_config, num_queries=15000)
@@ -290,10 +290,7 @@ def compute_inter_session_gain(isolated_results, shared_results):
 
 def run_personalized_memory_experiment():
     """Main experiment with TWO RUNS: isolated vs shared cache"""
-    logger.info("="*70)
     logger.info("PERSONALIZED MEMORY EFFECTS EXPERIMENT")
-    logger.info("TWO-RUN DESIGN: Isolated vs Shared Cache")
-    logger.info("="*70)
     
     # Create user personas with UNIQUE SEEDS
     user_configs = create_user_personas(num_users=15)
@@ -327,9 +324,7 @@ def run_personalized_memory_experiment():
                    f"Intra-session={result['intra_session_hit_rate']:.1f}%")
     
     # RUN 2: SHARED CACHE (all users share cache)
-    logger.info("\n" + "="*70)
     logger.info("RUN 2: SHARED CACHE (session_id = shared_population)")
-    logger.info("="*70)
     shared_results = []
     
     for user_config in user_configs:

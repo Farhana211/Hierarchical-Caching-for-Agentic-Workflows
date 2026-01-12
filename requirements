@@ -1,0 +1,16 @@
+# Core System
+redis>=5.0.0          # Required for src/redis_cache.py
+requests>=2.31.0      # Required for API calls in src/tools.py
+
+# Data Analysis & Experiments
+numpy>=1.24.0         # Matrix operations for simulations
+pandas>=2.0.0         # Dataframes for result processing
+scipy>=1.10.0         # Statistical functions (Zipfian distributions)
+
+# Visualization
+matplotlib>=3.7.0     # Generating the paper figures
+seaborn>=0.12.0       # Enhanced plotting styles
+
+# Utilities
+tqdm>=4.65.0          # Progress bars for long-running experiments
+python-dotenv>=1.0.0  # Managing environment variables (API keys)

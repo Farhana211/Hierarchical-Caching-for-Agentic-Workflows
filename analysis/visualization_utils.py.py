@@ -30,8 +30,8 @@ plt.rcParams['xtick.labelsize'] = 12
 plt.rcParams['ytick.labelsize'] = 12
 plt.rcParams['legend.fontsize'] = 11
 plt.rcParams['figure.titlesize'] = 16
-plt.rcParams['axes.linewidth'] = 1.2     # ADDED: Thicker axes
-plt.rcParams['lines.linewidth'] = 2.0    # ADDED: Thicker lines
+plt.rcParams['axes.linewidth'] = 1.2   
+plt.rcParams['lines.linewidth'] = 2.0   
 plt.rcParams['grid.linewidth'] = 0.8
 
 # Load the JSON data
@@ -146,7 +146,6 @@ def plot_figure2():
     configs = ['baseline_no_cache', 'lru_128', 'lru_512', 'tool_cache_only',
                'workflow_cache_only', 'tool_workflow_cache', 'simple_memoization',
                'full_system']
-
     tool_hit_rates = []
     workflow_hit_rates = []
     overall_efficiencies = []
@@ -214,7 +213,6 @@ def plot_figure2():
 plot_figure2()
 
 # FIGURE 3: COMPONENT ABLATION ANALYSIS (WATERFALL CHART)
-
 def plot_figure3():
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 
@@ -354,7 +352,6 @@ def plot_figure3():
 plot_figure3()
 
 # FIGURE 4: CATEGORY-SPECIFIC HIT RATES (STACKED BAR CHART)
-
 def plot_figure4():
     fig, ax = plt.subplots(figsize=(14, 7))
 
@@ -380,7 +377,7 @@ def plot_figure4():
                 category_hits.append(0)
         data_matrix.append(category_hits)
 
-    data_matrix = np.array(data_matrix).T  # Transpose for stacking
+    data_matrix = np.array(data_matrix).T  
 
     x = np.arange(len(configs))
     width = 0.6
@@ -422,7 +419,6 @@ def plot_figure4():
 plot_figure4()
 
 # FIGURE 5: EXECUTION TIME DISTRIBUTION (BOX PLOT)
-
 def plot_figure5():
     fig, ax = plt.subplots(figsize=(14, 7))
 
@@ -498,7 +494,6 @@ def plot_figure5():
 plot_figure5()
 
 # FIGURE 6: COST ANALYSIS WITH ROI (DUAL-AXIS BAR+LINE) - FIXED
-
 def plot_figure6_fixed():
     fig, ax1 = plt.subplots(figsize=(14, 7))
 
@@ -853,7 +848,7 @@ def plot_figure8():
     plt.savefig('figure8_efficiency_time_tradeoff.png', bbox_inches='tight')
     plt.show()
 
-    print("✅ Figure 8 saved as 'figure8_efficiency_time_tradeoff.png'")
+    print("Figure 8 saved as 'figure8_efficiency_time_tradeoff.png'")
 
 # Run the updated function
 plot_figure8()
@@ -1132,7 +1127,7 @@ def plot_summary_dashboard():
                  ha='center', fontweight='bold', fontsize=9)
 
 
-    # Panel 3: Cost savings (top-right) - FIXED
+    # Panel 3: Cost savings (top-right)
     ax3 = fig.add_subplot(gs[0, 2])
     savings = []
     for c in configs_summary:
@@ -1237,7 +1232,7 @@ def plot_summary_dashboard():
     plt.savefig('summary_dashboard.png', bbox_inches='tight', dpi=300)
     plt.show()
 
-    print("✅ Summary dashboard saved as 'summary_dashboard.png'")
+    print(" Summary dashboard saved as 'summary_dashboard.png'")
 
 # Run it
 plot_summary_dashboard()

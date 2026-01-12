@@ -304,7 +304,7 @@ def run_24hour_adaptive_ttl_experiment():
     with open(final_file, 'w') as f:
         json.dump(results, f, indent=2, default=str)  # Added default=str
     
-    logger.info(f"\n✓ Final results saved: {final_file}")
+    logger.info(f"\n Final results saved: {final_file}")
     
     # Interpretation
     fixed_efficiency = results["fixed_ttl"]["cumulative"]["avg_overall_efficiency"]
@@ -321,11 +321,6 @@ def run_24hour_adaptive_ttl_experiment():
             logger.info(f"   Staleness injection enabled adaptive TTL to learn optimal TTLs")
         else:
             logger.info(f" Adaptive TTL improvement not statistically significant (p={p_val:.4f})")
-            logger.info(f"   Possible reasons:")
-            logger.info(f"   - Base TTLs already well-tuned for this workload")
-            logger.info(f"   - Staleness events may not be frequent enough")
-            logger.info(f"   - Would benefit more from dynamic production workloads")
-    
     return results
 
 

@@ -21,14 +21,9 @@ logger = logging.getLogger(__name__)
 
 
 def quick_test():
-    logger.info("="*70)
-    logger.info("QUICK TEST MODE (100 questions, 3 runs, parallel)")
-    logger.info("="*70)
-    
-    evaluator = ComprehensiveEvaluator(num_runs=3, seed=42, parallel=True)
-    
-    results_dir = f"test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-    
+    logger.info("QUICK TEST MODE (100 questions, 3 runs, parallel)")  
+    evaluator = ComprehensiveEvaluator(num_runs=3, seed=42, parallel=True)    
+    results_dir = f"test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}"    
     summary = evaluator.run_ablation_study(
         num_questions=100,
         save_dir=results_dir
@@ -73,16 +68,13 @@ def run_full_evaluation(args):
             shutil.rmtree(checkpoint_dir)
             logger.info("Checkpoints cleaned")
     
-    logger.info("="*70)
     logger.info("COMPREHENSIVE JOURNAL EVALUATION v2.4")
-    logger.info("="*70)
     logger.info(f"Configuration:")
     logger.info(f"  Questions: {args.questions}")
     logger.info(f"  Runs per config: {args.runs}")
     logger.info(f"  Parallel execution: {not args.sequential}")
     logger.info(f"  Results directory: {results_dir}")
-    logger.info("="*70)
-    
+
     total_start = time.time()
     
     logger.info("\nSTEP 1: Running comprehensive evaluation...")
@@ -117,10 +109,7 @@ def run_full_evaluation(args):
             logger.error(f"Visualization generation failed: {e}")
     
     total_time = time.time() - total_start
-    
-    logger.info("\n" + "="*70)
     logger.info("EVALUATION COMPLETE!")
-    logger.info("="*70)
     logger.info(f"Total time: {total_time/3600:.2f} hours")
     logger.info(f"\nResults saved to: {results_dir}/")
     logger.info("\n" + "="*70)
@@ -177,13 +166,7 @@ Examples:
         elif args.full or args.questions or args.runs:
             results_dir = run_full_evaluation(args)
             
-            print(f"\n✓ All results saved to: {results_dir}/")
-            print("\nRecommended next steps:")
-            print("1. Review the paper summary for key claims")
-            print("2. Check figures/ for publication-ready visualizations")
-            print("3. Verify variance exists (std > 0)")
-            print("4. Check workflow contribution is measured correctly")
-            
+            print(f"\n All results saved to: {results_dir}/")
         else:
             parser.print_help()
     
@@ -193,7 +176,6 @@ Examples:
     except Exception as e:
         logger.error(f"Error during evaluation: {e}", exc_info=True)
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()

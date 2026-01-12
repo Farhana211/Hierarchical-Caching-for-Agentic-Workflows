@@ -67,7 +67,7 @@ def run_write_intensity_experiment():
     """Test caching architecture under different write ratios"""
     
     write_ratios = [0.04, 0.10, 0.20, 0.30]  # 4%, 10%, 20%, 30%
-    num_runs = 3  # ✅ FIXED: Multiple runs for statistical validity
+    num_runs = 3  # Multiple runs for statistical validity
     
     results = {}
     baseline_efficiency = None
@@ -96,7 +96,7 @@ def run_write_intensity_experiment():
         configs_to_test = ["baseline_no_cache", "tool_cache_only", "full_system"]
         config_results = {}
         
-        # ✅ FIXED: Multiple runs per config
+        # Multiple runs per config
         for config_name in configs_to_test:
             logger.info(f"\n  Evaluating: {config_name} ({num_runs} runs)")
             
@@ -110,7 +110,7 @@ def run_write_intensity_experiment():
                 runs.append(result)
                 logger.info(f"    Run {run_id+1}/{num_runs}: Efficiency={result.get('overall_caching_efficiency', 0.0):.1f}%")
             
-            # ✅ FIXED: Robust metric extraction with fallbacks
+            # Robust metric extraction with fallbacks
             efficiencies = [r.get('overall_caching_efficiency', 0.0) for r in runs]
             tool_hits = [r.get('tool_cache_hit_rate', 0.0) for r in runs]
             workflow_hits = [r.get('workflow_cache_hit_rate', 0.0) for r in runs]
@@ -144,7 +144,7 @@ def run_write_intensity_experiment():
                 "avg_invalidation_time_ms": float(np.mean(inv_times))
             }
         
-        # ✅ FIXED: Efficiency degradation with correct sign
+        # Efficiency degradation with correct sign
         if write_ratio == 0.04:
             baseline_efficiency = config_results['full_system']['overall_efficiency']
             efficiency_degradation = 0.0
@@ -167,7 +167,6 @@ def run_write_intensity_experiment():
         logger.info(f"    Efficiency: {config_results['full_system']['overall_efficiency']:.1f}% ± {config_results['full_system']['overall_efficiency_std']:.1f}%")
         logger.info(f"    Degradation: {efficiency_degradation:+.1f}pp")
     
-    #  FIXED: JSON save syntax
     output_file = f"write_intensity_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
@@ -176,11 +175,8 @@ def run_write_intensity_experiment():
     logger.info(f"Results saved to: {output_file}")
     
     # Print summary
-    print("\n" + "="*90)
     print("WRITE-INTENSITY IMPACT SUMMARY")
-    print("="*90)
     print(f"{'Write %':<12} {'Efficiency':<20} {'Tool Hit':<20} {'WF Hit':<20} {'Degradation':<15}")
-    print("-"*90)
     for key in sorted(results.keys()):
         data = results[key]
         fs = data['configs']['full_system']

@@ -1,0 +1,3977 @@
+[
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 5,
+    "session_id": "tool_workflow_cache_run_5",
+    "total_questions": 15000,
+    "total_time": 344.98367047309875,
+    "cost_summary": {
+      "total_api_calls": 12271,
+      "cached_calls": 9429,
+      "cache_rate": "76.8%",
+      "total_cost_usd": "$2.2287",
+      "saved_cost_usd": "$6.1914",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "external_medium": {
+        "total_calls": 879,
+        "cached_calls": 870,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8700",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1568,
+        "cached_calls": 1359,
+        "cache_rate": "86.7%",
+        "actual_cost": "$0.0627",
+        "saved_cost": "$0.4077",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2475,
+        "cached_calls": 1956,
+        "cache_rate": "79.0%",
+        "actual_cost": "$0.2595",
+        "saved_cost": "$0.9780",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 226,
+        "cached_calls": 2,
+        "cache_rate": "0.9%",
+        "actual_cost": "$0.2240",
+        "saved_cost": "$0.0020",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2249,
+        "cached_calls": 2207,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0420",
+        "saved_cost": "$2.2070",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 595,
+        "cached_calls": 584,
+        "cache_rate": "98.2%",
+        "actual_cost": "$0.0110",
+        "saved_cost": "$0.5840",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 523,
+        "cached_calls": 511,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4088",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 627,
+        "cached_calls": 509,
+        "cache_rate": "81.2%",
+        "actual_cost": "$0.0118",
+        "saved_cost": "$0.0509",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 82,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0820",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 177,
+        "cached_calls": 64,
+        "cache_rate": "36.2%",
+        "actual_cost": "$0.2260",
+        "saved_cost": "$0.1280",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 515,
+        "cached_calls": 469,
+        "cache_rate": "91.1%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0938",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 122,
+        "cached_calls": 34,
+        "cache_rate": "27.9%",
+        "actual_cost": "$0.0880",
+        "saved_cost": "$0.0340",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 201,
+        "cached_calls": 12,
+        "cache_rate": "6.0%",
+        "actual_cost": "$0.0189",
+        "saved_cost": "$0.0012",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 2992,
+    "tool_calls_executed": 2842,
+    "tool_cache_hits": 150,
+    "tool_cache_hit_rate": 5.0133689839572195,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8883,
+    "workflow_cache_hit_rate": 59.21999999999999,
+    "tools_saved_by_workflow": 9279,
+    "overall_caching_efficiency": 76.83970336565888,
+    "avg_execution_time": 0.022979511451721193,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09437546173790515,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10242359638214112,
+    "p95_execution_time": 0.10678496360778805,
+    "p99_execution_time": 0.3060690689086914,
+    "memory": {
+      "peak_mb": 205.3671875,
+      "avg_mb": 196.13366336633663,
+      "snapshots": [
+        {
+          "timestamp": 311.3322367668152,
+          "rss_mb": 203.59765625,
+          "vms_mb": 1638.67578125,
+          "percent": 0.20780459717735478,
+          "cache_size": 40978
+        },
+        {
+          "timestamp": 316.5884807109833,
+          "rss_mb": 203.796875,
+          "vms_mb": 1639.6796875,
+          "percent": 0.2080039415973476,
+          "cache_size": 41236
+        },
+        {
+          "timestamp": 323.1704647541046,
+          "rss_mb": 203.984375,
+          "vms_mb": 1639.6796875,
+          "percent": 0.2081953122405408,
+          "cache_size": 41487
+        },
+        {
+          "timestamp": 326.92427468299866,
+          "rss_mb": 204.1640625,
+          "vms_mb": 1639.6796875,
+          "percent": 0.20838269599533407,
+          "cache_size": 41621
+        },
+        {
+          "timestamp": 329.11275911331177,
+          "rss_mb": 204.36328125,
+          "vms_mb": 1639.6796875,
+          "percent": 0.20858204041532694,
+          "cache_size": 41799
+        },
+        {
+          "timestamp": 331.95537519454956,
+          "rss_mb": 204.66015625,
+          "vms_mb": 1639.80859375,
+          "percent": 0.20888504393371607,
+          "cache_size": 42004
+        },
+        {
+          "timestamp": 337.80208468437195,
+          "rss_mb": 204.85546875,
+          "vms_mb": 1639.80859375,
+          "percent": 0.20908837524210877,
+          "cache_size": 42317
+        },
+        {
+          "timestamp": 340.7070269584656,
+          "rss_mb": 205.02734375,
+          "vms_mb": 1640.80859375,
+          "percent": 0.2092598114433026,
+          "cache_size": 42442
+        },
+        {
+          "timestamp": 343.5475299358368,
+          "rss_mb": 205.19921875,
+          "vms_mb": 1640.80859375,
+          "percent": 0.20943523453289636,
+          "cache_size": 42557
+        },
+        {
+          "timestamp": 344.98367047309875,
+          "rss_mb": 205.3671875,
+          "vms_mb": 1640.80859375,
+          "percent": 0.20960667073409023,
+          "cache_size": 42651
+        }
+      ]
+    },
+    "category_breakdown": {
+      "external": {
+        "total_calls": 25,
+        "cache_hits": 7,
+        "hit_rate": 28.000000000000004,
+        "avg_execution_time": 0.5038252406650119
+      },
+      "database": {
+        "total_calls": 1086,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10277083872870627
+      },
+      "api": {
+        "total_calls": 1480,
+        "cache_hits": 132,
+        "hit_rate": 8.91891891891892,
+        "avg_execution_time": 0.2065508142776942
+      },
+      "compute": {
+        "total_calls": 2820,
+        "cache_hits": 10,
+        "hit_rate": 0.3546099290780142,
+        "avg_execution_time": 0.09252154818633274
+      },
+      "filesystem": {
+        "total_calls": 423,
+        "cache_hits": 1,
+        "hit_rate": 0.2364066193853428,
+        "avg_execution_time": 0.04122648871905431
+      }
+    },
+    "dependency_invalidations": 961,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 468
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 13,
+    "session_id": "tool_workflow_cache_run_13",
+    "total_questions": 15000,
+    "total_time": 349.20860743522644,
+    "cost_summary": {
+      "total_api_calls": 12322,
+      "cached_calls": 9449,
+      "cache_rate": "76.7%",
+      "total_cost_usd": "$2.2419",
+      "saved_cost_usd": "$6.2531",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "fs_read_file": {
+        "total_calls": 655,
+        "cached_calls": 526,
+        "cache_rate": "80.3%",
+        "actual_cost": "$0.0129",
+        "saved_cost": "$0.0526",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2331,
+        "cached_calls": 2288,
+        "cache_rate": "98.2%",
+        "actual_cost": "$0.0430",
+        "saved_cost": "$2.2880",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2456,
+        "cached_calls": 1945,
+        "cache_rate": "79.2%",
+        "actual_cost": "$0.2555",
+        "saved_cost": "$0.9725",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 600,
+        "cached_calls": 589,
+        "cache_rate": "98.2%",
+        "actual_cost": "$0.0110",
+        "saved_cost": "$0.5890",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1499,
+        "cached_calls": 1286,
+        "cache_rate": "85.8%",
+        "actual_cost": "$0.0639",
+        "saved_cost": "$0.3858",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 902,
+        "cached_calls": 893,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8930",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 234,
+        "cached_calls": 1,
+        "cache_rate": "0.4%",
+        "actual_cost": "$0.2330",
+        "saved_cost": "$0.0010",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 519,
+        "cached_calls": 507,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4056",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 162,
+        "cached_calls": 59,
+        "cache_rate": "36.4%",
+        "actual_cost": "$0.2060",
+        "saved_cost": "$0.1180",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 516,
+        "cached_calls": 470,
+        "cache_rate": "91.1%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0940",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 194,
+        "cached_calls": 6,
+        "cache_rate": "3.1%",
+        "actual_cost": "$0.0188",
+        "saved_cost": "$0.0006",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 130,
+        "cached_calls": 27,
+        "cache_rate": "20.8%",
+        "actual_cost": "$0.1030",
+        "saved_cost": "$0.0270",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 92,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0920",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3015,
+    "tool_calls_executed": 2873,
+    "tool_cache_hits": 142,
+    "tool_cache_hit_rate": 4.7097844112769485,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8937,
+    "workflow_cache_hit_rate": 59.58,
+    "tools_saved_by_workflow": 9307,
+    "overall_caching_efficiency": 76.68397987339718,
+    "avg_execution_time": 0.023262037245432535,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09663837014339857,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10250060558319092,
+    "p95_execution_time": 0.1074391365051269,
+    "p99_execution_time": 0.30514214277267465,
+    "memory": {
+      "peak_mb": 205.98046875,
+      "avg_mb": 196.71902073019803,
+      "snapshots": [
+        {
+          "timestamp": 316.20009088516235,
+          "rss_mb": 204.30078125,
+          "vms_mb": 1639.27734375,
+          "percent": 0.20851825020092918,
+          "cache_size": 41209
+        },
+        {
+          "timestamp": 322.4819085597992,
+          "rss_mb": 204.50390625,
+          "vms_mb": 1640.27734375,
+          "percent": 0.20872556839772177,
+          "cache_size": 41431
+        },
+        {
+          "timestamp": 324.5584418773651,
+          "rss_mb": 204.66015625,
+          "vms_mb": 1640.27734375,
+          "percent": 0.20888504393371607,
+          "cache_size": 41532
+        },
+        {
+          "timestamp": 326.9542911052704,
+          "rss_mb": 204.8359375,
+          "vms_mb": 1640.27734375,
+          "percent": 0.20906445391170964,
+          "cache_size": 41625
+        },
+        {
+          "timestamp": 329.2503740787506,
+          "rss_mb": 205.02734375,
+          "vms_mb": 1640.27734375,
+          "percent": 0.2092637983317025,
+          "cache_size": 41817
+        },
+        {
+          "timestamp": 334.07497000694275,
+          "rss_mb": 205.21875,
+          "vms_mb": 1640.27734375,
+          "percent": 0.20945516897489563,
+          "cache_size": 42108
+        },
+        {
+          "timestamp": 336.7356650829315,
+          "rss_mb": 205.45703125,
+          "vms_mb": 1641.28125,
+          "percent": 0.20969836916728693,
+          "cache_size": 42230
+        },
+        {
+          "timestamp": 338.92413091659546,
+          "rss_mb": 205.6171875,
+          "vms_mb": 1641.28125,
+          "percent": 0.20986183159168106,
+          "cache_size": 42337
+        },
+        {
+          "timestamp": 344.6497790813446,
+          "rss_mb": 205.8046875,
+          "vms_mb": 1641.28125,
+          "percent": 0.21005320223487423,
+          "cache_size": 42641
+        },
+        {
+          "timestamp": 349.20860743522644,
+          "rss_mb": 205.98046875,
+          "vms_mb": 1641.28125,
+          "percent": 0.21023659910126766,
+          "cache_size": 42832
+        }
+      ]
+    },
+    "category_breakdown": {
+      "filesystem": {
+        "total_calls": 464,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.04150569850000842
+      },
+      "api": {
+        "total_calls": 1444,
+        "cache_hits": 130,
+        "hit_rate": 9.002770083102494,
+        "avg_execution_time": 0.209938218785929
+      },
+      "database": {
+        "total_calls": 1142,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10530735565359246
+      },
+      "external": {
+        "total_calls": 23,
+        "cache_hits": 5,
+        "hit_rate": 21.73913043478261,
+        "avg_execution_time": 0.5034271346198188
+      },
+      "compute": {
+        "total_calls": 2815,
+        "cache_hits": 7,
+        "hit_rate": 0.24866785079928952,
+        "avg_execution_time": 0.09257850314137603
+      }
+    },
+    "dependency_invalidations": 983,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 500
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 11,
+    "session_id": "tool_workflow_cache_run_11",
+    "total_questions": 15000,
+    "total_time": 352.5909695625305,
+    "cost_summary": {
+      "total_api_calls": 12325,
+      "cached_calls": 9409,
+      "cache_rate": "76.3%",
+      "total_cost_usd": "$2.2780",
+      "saved_cost_usd": "$6.1702",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_weather": {
+        "total_calls": 2231,
+        "cached_calls": 2189,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0420",
+        "saved_cost": "$2.1890",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2456,
+        "cached_calls": 1932,
+        "cache_rate": "78.7%",
+        "actual_cost": "$0.2620",
+        "saved_cost": "$0.9660",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 908,
+        "cached_calls": 899,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8990",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 508,
+        "cached_calls": 462,
+        "cache_rate": "90.9%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0924",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 657,
+        "cached_calls": 532,
+        "cache_rate": "81.0%",
+        "actual_cost": "$0.0125",
+        "saved_cost": "$0.0532",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1571,
+        "cached_calls": 1351,
+        "cache_rate": "86.0%",
+        "actual_cost": "$0.0660",
+        "saved_cost": "$0.4053",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 93,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0930",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 523,
+        "cached_calls": 511,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4088",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 131,
+        "cached_calls": 31,
+        "cache_rate": "23.7%",
+        "actual_cost": "$0.1000",
+        "saved_cost": "$0.0310",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 601,
+        "cached_calls": 589,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.5890",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 166,
+        "cached_calls": 54,
+        "cache_rate": "32.5%",
+        "actual_cost": "$0.2240",
+        "saved_cost": "$0.1080",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 246,
+        "cached_calls": 2,
+        "cache_rate": "0.8%",
+        "actual_cost": "$0.2440",
+        "saved_cost": "$0.0020",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 202,
+        "cached_calls": 5,
+        "cache_rate": "2.5%",
+        "actual_cost": "$0.0197",
+        "saved_cost": "$0.0005",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3088,
+    "tool_calls_executed": 2916,
+    "tool_cache_hits": 172,
+    "tool_cache_hit_rate": 5.569948186528497,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8848,
+    "workflow_cache_hit_rate": 58.986666666666665,
+    "tools_saved_by_workflow": 9237,
+    "overall_caching_efficiency": 76.34077079107506,
+    "avg_execution_time": 0.023488738616307576,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09458319441132208,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10255947113037109,
+    "p95_execution_time": 0.10756006240844723,
+    "p99_execution_time": 0.3064000105857849,
+    "memory": {
+      "peak_mb": 205.99609375,
+      "avg_mb": 196.81861076732673,
+      "snapshots": [
+        {
+          "timestamp": 312.5097441673279,
+          "rss_mb": 204.2265625,
+          "vms_mb": 1639.26953125,
+          "percent": 0.20844249932133194,
+          "cache_size": 41048
+        },
+        {
+          "timestamp": 319.1527705192566,
+          "rss_mb": 204.43359375,
+          "vms_mb": 1640.26953125,
+          "percent": 0.20865380440652434,
+          "cache_size": 41326
+        },
+        {
+          "timestamp": 322.71049332618713,
+          "rss_mb": 204.63671875,
+          "vms_mb": 1640.26953125,
+          "percent": 0.20886112260331693,
+          "cache_size": 41442
+        },
+        {
+          "timestamp": 328.27863907814026,
+          "rss_mb": 204.83984375,
+          "vms_mb": 1640.26953125,
+          "percent": 0.20907242768850934,
+          "cache_size": 41721
+        },
+        {
+          "timestamp": 332.21200585365295,
+          "rss_mb": 205.05859375,
+          "vms_mb": 1640.26953125,
+          "percent": 0.20929170655050153,
+          "cache_size": 42018
+        },
+        {
+          "timestamp": 334.88703060150146,
+          "rss_mb": 205.2265625,
+          "vms_mb": 1640.26953125,
+          "percent": 0.20946712964009523,
+          "cache_size": 42136
+        },
+        {
+          "timestamp": 339.83706974983215,
+          "rss_mb": 205.4296875,
+          "vms_mb": 1641.2734375,
+          "percent": 0.20967444783688777,
+          "cache_size": 42410
+        },
+        {
+          "timestamp": 344.4356369972229,
+          "rss_mb": 205.6015625,
+          "vms_mb": 1641.2734375,
+          "percent": 0.20984987092648152,
+          "cache_size": 42611
+        },
+        {
+          "timestamp": 348.69986510276794,
+          "rss_mb": 205.8125,
+          "vms_mb": 1641.2734375,
+          "percent": 0.2100651629000738,
+          "cache_size": 42794
+        },
+        {
+          "timestamp": 352.5909695625305,
+          "rss_mb": 205.99609375,
+          "vms_mb": 1641.2734375,
+          "percent": 0.2102485597664672,
+          "cache_size": 42933
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1511,
+        "cache_hits": 155,
+        "hit_rate": 10.258107213765719,
+        "avg_execution_time": 0.20598616536739653
+      },
+      "external": {
+        "total_calls": 22,
+        "cache_hits": 4,
+        "hit_rate": 18.181818181818183,
+        "avg_execution_time": 0.5037481255001492
+      },
+      "database": {
+        "total_calls": 1172,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10468321245278107
+      },
+      "compute": {
+        "total_calls": 2837,
+        "cache_hits": 11,
+        "hit_rate": 0.38773352132534367,
+        "avg_execution_time": 0.092341549921272
+      },
+      "filesystem": {
+        "total_calls": 462,
+        "cache_hits": 2,
+        "hit_rate": 0.4329004329004329,
+        "avg_execution_time": 0.04164275501085364
+      }
+    },
+    "dependency_invalidations": 996,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 501
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 12,
+    "session_id": "tool_workflow_cache_run_12",
+    "total_questions": 15000,
+    "total_time": 353.12744212150574,
+    "cost_summary": {
+      "total_api_calls": 12435,
+      "cached_calls": 9554,
+      "cache_rate": "76.8%",
+      "total_cost_usd": "$2.2701",
+      "saved_cost_usd": "$6.3018",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "db_query_user": {
+        "total_calls": 1520,
+        "cached_calls": 1301,
+        "cache_rate": "85.6%",
+        "actual_cost": "$0.0657",
+        "saved_cost": "$0.3903",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2372,
+        "cached_calls": 2328,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0440",
+        "saved_cost": "$2.3280",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2467,
+        "cached_calls": 1957,
+        "cache_rate": "79.3%",
+        "actual_cost": "$0.2550",
+        "saved_cost": "$0.9785",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 251,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.2510",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 520,
+        "cached_calls": 508,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4064",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 574,
+        "cached_calls": 563,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0110",
+        "saved_cost": "$0.5630",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 886,
+        "cached_calls": 877,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8770",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 195,
+        "cached_calls": 9,
+        "cache_rate": "4.6%",
+        "actual_cost": "$0.0186",
+        "saved_cost": "$0.0009",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 699,
+        "cached_calls": 579,
+        "cache_rate": "82.8%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.0579",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 190,
+        "cached_calls": 73,
+        "cache_rate": "38.4%",
+        "actual_cost": "$0.2340",
+        "saved_cost": "$0.1460",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 520,
+        "cached_calls": 474,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0948",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 84,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0840",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 125,
+        "cached_calls": 33,
+        "cache_rate": "26.4%",
+        "actual_cost": "$0.0920",
+        "saved_cost": "$0.0330",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3048,
+    "tool_calls_executed": 2881,
+    "tool_cache_hits": 167,
+    "tool_cache_hit_rate": 5.4790026246719155,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8963,
+    "workflow_cache_hit_rate": 59.75333333333334,
+    "tools_saved_by_workflow": 9387,
+    "overall_caching_efficiency": 76.83152392440692,
+    "avg_execution_time": 0.023521590566635133,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09754129739902208,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10258848667144775,
+    "p95_execution_time": 0.1076840877532959,
+    "p99_execution_time": 0.3067705225944519,
+    "memory": {
+      "peak_mb": 205.890625,
+      "avg_mb": 196.78225556930693,
+      "snapshots": [
+        {
+          "timestamp": 320.5254108905792,
+          "rss_mb": 204.27734375,
+          "vms_mb": 1640.06640625,
+          "percent": 0.20849432887053007,
+          "cache_size": 41365
+        },
+        {
+          "timestamp": 326.38022804260254,
+          "rss_mb": 204.45703125,
+          "vms_mb": 1640.06640625,
+          "percent": 0.20868171262532334,
+          "cache_size": 41601
+        },
+        {
+          "timestamp": 331.41465497016907,
+          "rss_mb": 204.6484375,
+          "vms_mb": 1640.06640625,
+          "percent": 0.20887308326851647,
+          "cache_size": 41950
+        },
+        {
+          "timestamp": 335.27485156059265,
+          "rss_mb": 204.8671875,
+          "vms_mb": 1640.06640625,
+          "percent": 0.2090963490189085,
+          "cache_size": 42166
+        },
+        {
+          "timestamp": 338.2907211780548,
+          "rss_mb": 205.0546875,
+          "vms_mb": 1640.06640625,
+          "percent": 0.20928771966210163,
+          "cache_size": 42338
+        },
+        {
+          "timestamp": 340.61013293266296,
+          "rss_mb": 205.23046875,
+          "vms_mb": 1640.06640625,
+          "percent": 0.20946712964009523,
+          "cache_size": 42434
+        },
+        {
+          "timestamp": 344.2388858795166,
+          "rss_mb": 205.3984375,
+          "vms_mb": 1641.0703125,
+          "percent": 0.20963856584128907,
+          "cache_size": 42610
+        },
+        {
+          "timestamp": 346.168354511261,
+          "rss_mb": 205.546875,
+          "vms_mb": 1641.0703125,
+          "percent": 0.20979006760048366,
+          "cache_size": 42703
+        },
+        {
+          "timestamp": 348.5386769771576,
+          "rss_mb": 205.71875,
+          "vms_mb": 1641.0703125,
+          "percent": 0.20996549069007736,
+          "cache_size": 42792
+        },
+        {
+          "timestamp": 353.12744212150574,
+          "rss_mb": 205.890625,
+          "vms_mb": 1641.0703125,
+          "percent": 0.2101488875564708,
+          "cache_size": 42956
+        }
+      ]
+    },
+    "category_breakdown": {
+      "database": {
+        "total_calls": 1168,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10326824367862858
+      },
+      "api": {
+        "total_calls": 1493,
+        "cache_hits": 151,
+        "hit_rate": 10.113864701942397,
+        "avg_execution_time": 0.21197580402902982
+      },
+      "filesystem": {
+        "total_calls": 430,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.0411274699277656
+      },
+      "compute": {
+        "total_calls": 2814,
+        "cache_hits": 10,
+        "hit_rate": 0.35536602700781805,
+        "avg_execution_time": 0.09263015337575349
+      },
+      "external": {
+        "total_calls": 24,
+        "cache_hits": 6,
+        "hit_rate": 25.0,
+        "avg_execution_time": 0.5025223361121284
+      }
+    },
+    "dependency_invalidations": 970,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 496
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 9,
+    "session_id": "tool_workflow_cache_run_9",
+    "total_questions": 15000,
+    "total_time": 353.4439253807068,
+    "cost_summary": {
+      "total_api_calls": 12445,
+      "cached_calls": 9577,
+      "cache_rate": "77.0%",
+      "total_cost_usd": "$2.2649",
+      "saved_cost_usd": "$6.2873",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_user_location": {
+        "total_calls": 2499,
+        "cached_calls": 2001,
+        "cache_rate": "80.1%",
+        "actual_cost": "$0.2490",
+        "saved_cost": "$1.0005",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2350,
+        "cached_calls": 2305,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0450",
+        "saved_cost": "$2.3050",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 910,
+        "cached_calls": 901,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.9010",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1576,
+        "cached_calls": 1361,
+        "cache_rate": "86.4%",
+        "actual_cost": "$0.0645",
+        "saved_cost": "$0.4083",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 125,
+        "cached_calls": 29,
+        "cache_rate": "23.2%",
+        "actual_cost": "$0.0960",
+        "saved_cost": "$0.0290",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 569,
+        "cached_calls": 557,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.5570",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 650,
+        "cached_calls": 536,
+        "cache_rate": "82.5%",
+        "actual_cost": "$0.0114",
+        "saved_cost": "$0.0536",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 165,
+        "cached_calls": 58,
+        "cache_rate": "35.2%",
+        "actual_cost": "$0.2140",
+        "saved_cost": "$0.1160",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 275,
+        "cached_calls": 2,
+        "cache_rate": "0.7%",
+        "actual_cost": "$0.2730",
+        "saved_cost": "$0.0020",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 504,
+        "cached_calls": 492,
+        "cache_rate": "97.6%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.3936",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 516,
+        "cached_calls": 470,
+        "cache_rate": "91.1%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0940",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 195,
+        "cached_calls": 13,
+        "cache_rate": "6.7%",
+        "actual_cost": "$0.0182",
+        "saved_cost": "$0.0013",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 79,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0790",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3010,
+    "tool_calls_executed": 2868,
+    "tool_cache_hits": 142,
+    "tool_cache_hit_rate": 4.717607973421927,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8987,
+    "workflow_cache_hit_rate": 59.91333333333333,
+    "tools_saved_by_workflow": 9435,
+    "overall_caching_efficiency": 76.95460024106066,
+    "avg_execution_time": 0.023540670665105182,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09659993478372106,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10262823104858398,
+    "p95_execution_time": 0.10779660940170285,
+    "p99_execution_time": 0.30562873125076295,
+    "memory": {
+      "peak_mb": 206.32421875,
+      "avg_mb": 197.14719987623764,
+      "snapshots": [
+        {
+          "timestamp": 319.76269483566284,
+          "rss_mb": 204.6875,
+          "vms_mb": 1640.640625,
+          "percent": 0.20891295215251507,
+          "cache_size": 41330
+        },
+        {
+          "timestamp": 323.91131472587585,
+          "rss_mb": 204.87109375,
+          "vms_mb": 1640.640625,
+          "percent": 0.2091043227957082,
+          "cache_size": 41508
+        },
+        {
+          "timestamp": 328.3284111022949,
+          "rss_mb": 205.06640625,
+          "vms_mb": 1640.640625,
+          "percent": 0.2092996803273012,
+          "cache_size": 41739
+        },
+        {
+          "timestamp": 330.4573037624359,
+          "rss_mb": 205.2421875,
+          "vms_mb": 1640.640625,
+          "percent": 0.20948307719369463,
+          "cache_size": 41885
+        },
+        {
+          "timestamp": 335.6791980266571,
+          "rss_mb": 205.421875,
+          "vms_mb": 1640.640625,
+          "percent": 0.2096664740600881,
+          "cache_size": 42187
+        },
+        {
+          "timestamp": 338.4618227481842,
+          "rss_mb": 205.6015625,
+          "vms_mb": 1640.640625,
+          "percent": 0.20984588403808163,
+          "cache_size": 42346
+        },
+        {
+          "timestamp": 341.23635625839233,
+          "rss_mb": 205.7890625,
+          "vms_mb": 1641.640625,
+          "percent": 0.2100372546812748,
+          "cache_size": 42470
+        },
+        {
+          "timestamp": 346.5060713291168,
+          "rss_mb": 205.9609375,
+          "vms_mb": 1641.640625,
+          "percent": 0.2102126777708685,
+          "cache_size": 42721
+        },
+        {
+          "timestamp": 349.8364746570587,
+          "rss_mb": 206.15234375,
+          "vms_mb": 1641.640625,
+          "percent": 0.21040803530246152,
+          "cache_size": 42831
+        },
+        {
+          "timestamp": 353.4439253807068,
+          "rss_mb": 206.32421875,
+          "vms_mb": 1641.640625,
+          "percent": 0.21058345839205522,
+          "cache_size": 42969
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1426,
+        "cache_hits": 126,
+        "hit_rate": 8.835904628330995,
+        "avg_execution_time": 0.21594976388491116
+      },
+      "database": {
+        "total_calls": 1212,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10410842525683614
+      },
+      "external": {
+        "total_calls": 22,
+        "cache_hits": 4,
+        "hit_rate": 18.181818181818183,
+        "avg_execution_time": 0.503781795501709
+      },
+      "filesystem": {
+        "total_calls": 411,
+        "cache_hits": 1,
+        "hit_rate": 0.24330900243309003,
+        "avg_execution_time": 0.04154597259149319
+      },
+      "compute": {
+        "total_calls": 2807,
+        "cache_hits": 11,
+        "hit_rate": 0.3918774492340577,
+        "avg_execution_time": 0.09276043550139333
+      }
+    },
+    "dependency_invalidations": 953,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 517
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 14,
+    "session_id": "tool_workflow_cache_run_14",
+    "total_questions": 15000,
+    "total_time": 354.44743752479553,
+    "cost_summary": {
+      "total_api_calls": 12314,
+      "cached_calls": 9412,
+      "cache_rate": "76.4%",
+      "total_cost_usd": "$2.2544",
+      "saved_cost_usd": "$6.1137",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "db_join_query": {
+        "total_calls": 134,
+        "cached_calls": 35,
+        "cache_rate": "26.1%",
+        "actual_cost": "$0.0990",
+        "saved_cost": "$0.0350",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 515,
+        "cached_calls": 503,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4024",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 573,
+        "cached_calls": 564,
+        "cache_rate": "98.4%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.5640",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 861,
+        "cached_calls": 852,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8520",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2238,
+        "cached_calls": 2193,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0450",
+        "saved_cost": "$2.1930",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2511,
+        "cached_calls": 1976,
+        "cache_rate": "78.7%",
+        "actual_cost": "$0.2675",
+        "saved_cost": "$0.9880",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 533,
+        "cached_calls": 487,
+        "cache_rate": "91.4%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0974",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1523,
+        "cached_calls": 1306,
+        "cache_rate": "85.8%",
+        "actual_cost": "$0.0651",
+        "saved_cost": "$0.3918",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 716,
+        "cached_calls": 585,
+        "cache_rate": "81.7%",
+        "actual_cost": "$0.0131",
+        "saved_cost": "$0.0585",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 212,
+        "cached_calls": 1,
+        "cache_rate": "0.5%",
+        "actual_cost": "$0.2110",
+        "saved_cost": "$0.0010",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 165,
+        "cached_calls": 52,
+        "cache_rate": "31.5%",
+        "actual_cost": "$0.2260",
+        "saved_cost": "$0.1040",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 205,
+        "cached_calls": 6,
+        "cache_rate": "2.9%",
+        "actual_cost": "$0.0199",
+        "saved_cost": "$0.0006",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 96,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0960",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3063,
+    "tool_calls_executed": 2902,
+    "tool_cache_hits": 161,
+    "tool_cache_hit_rate": 5.256284688214169,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8878,
+    "workflow_cache_hit_rate": 59.18666666666667,
+    "tools_saved_by_workflow": 9251,
+    "overall_caching_efficiency": 76.43332791944128,
+    "avg_execution_time": 0.02361208292643229,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09843807890995641,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10244336128234863,
+    "p95_execution_time": 0.1070685863494873,
+    "p99_execution_time": 0.3066960310935974,
+    "memory": {
+      "peak_mb": 205.41015625,
+      "avg_mb": 196.37933168316832,
+      "snapshots": [
+        {
+          "timestamp": 317.17294907569885,
+          "rss_mb": 203.7734375,
+          "vms_mb": 1638.7265625,
+          "percent": 0.2079800202669485,
+          "cache_size": 41256
+        },
+        {
+          "timestamp": 320.3757150173187,
+          "rss_mb": 203.96875,
+          "vms_mb": 1639.7265625,
+          "percent": 0.20817936468694137,
+          "cache_size": 41360
+        },
+        {
+          "timestamp": 324.18978571891785,
+          "rss_mb": 204.1484375,
+          "vms_mb": 1639.7265625,
+          "percent": 0.20836276155333477,
+          "cache_size": 41511
+        },
+        {
+          "timestamp": 328.5327570438385,
+          "rss_mb": 204.34765625,
+          "vms_mb": 1639.7265625,
+          "percent": 0.2085660928617275,
+          "cache_size": 41744
+        },
+        {
+          "timestamp": 331.5736207962036,
+          "rss_mb": 204.54296875,
+          "vms_mb": 1639.7265625,
+          "percent": 0.20876543728172034,
+          "cache_size": 41968
+        },
+        {
+          "timestamp": 337.1961131095886,
+          "rss_mb": 204.7265625,
+          "vms_mb": 1639.7265625,
+          "percent": 0.20895282103651366,
+          "cache_size": 42254
+        },
+        {
+          "timestamp": 341.105988740921,
+          "rss_mb": 204.88671875,
+          "vms_mb": 1640.73046875,
+          "percent": 0.20911628346090777,
+          "cache_size": 42462
+        },
+        {
+          "timestamp": 347.4652223587036,
+          "rss_mb": 205.078125,
+          "vms_mb": 1640.73046875,
+          "percent": 0.2093116409925008,
+          "cache_size": 42765
+        },
+        {
+          "timestamp": 350.80169796943665,
+          "rss_mb": 205.25,
+          "vms_mb": 1640.73046875,
+          "percent": 0.2094870640820945,
+          "cache_size": 42882
+        },
+        {
+          "timestamp": 354.44743752479553,
+          "rss_mb": 205.41015625,
+          "vms_mb": 1640.73046875,
+          "percent": 0.20965052650648866,
+          "cache_size": 43013
+        }
+      ]
+    },
+    "category_breakdown": {
+      "database": {
+        "total_calls": 1098,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.1043047175381353
+      },
+      "filesystem": {
+        "total_calls": 474,
+        "cache_hits": 2,
+        "hit_rate": 0.42194092827004215,
+        "avg_execution_time": 0.041606448464474435
+      },
+      "external": {
+        "total_calls": 25,
+        "cache_hits": 7,
+        "hit_rate": 28.000000000000004,
+        "avg_execution_time": 0.5038090811835395
+      },
+      "api": {
+        "total_calls": 1529,
+        "cache_hits": 143,
+        "hit_rate": 9.352517985611511,
+        "avg_execution_time": 0.20979895254578254
+      },
+      "compute": {
+        "total_calls": 2839,
+        "cache_hits": 9,
+        "hit_rate": 0.3170130327580134,
+        "avg_execution_time": 0.09221006686611648
+      }
+    },
+    "dependency_invalidations": 1004,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 484
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 7,
+    "session_id": "tool_workflow_cache_run_7",
+    "total_questions": 15000,
+    "total_time": 355.5717511177063,
+    "cost_summary": {
+      "total_api_calls": 12313,
+      "cached_calls": 9429,
+      "cache_rate": "76.6%",
+      "total_cost_usd": "$2.2635",
+      "saved_cost_usd": "$6.1962",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_user_location": {
+        "total_calls": 2428,
+        "cached_calls": 1910,
+        "cache_rate": "78.7%",
+        "actual_cost": "$0.2590",
+        "saved_cost": "$0.9550",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2306,
+        "cached_calls": 2260,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0460",
+        "saved_cost": "$2.2600",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 521,
+        "cached_calls": 475,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0950",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 918,
+        "cached_calls": 909,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.9090",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 658,
+        "cached_calls": 545,
+        "cache_rate": "82.8%",
+        "actual_cost": "$0.0113",
+        "saved_cost": "$0.0545",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1530,
+        "cached_calls": 1312,
+        "cache_rate": "85.8%",
+        "actual_cost": "$0.0654",
+        "saved_cost": "$0.3936",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 584,
+        "cached_calls": 572,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.5720",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 516,
+        "cached_calls": 504,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4032",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 269,
+        "cached_calls": 3,
+        "cache_rate": "1.1%",
+        "actual_cost": "$0.2660",
+        "saved_cost": "$0.0030",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 154,
+        "cached_calls": 46,
+        "cache_rate": "29.9%",
+        "actual_cost": "$0.2160",
+        "saved_cost": "$0.0920",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 199,
+        "cached_calls": 9,
+        "cache_rate": "4.5%",
+        "actual_cost": "$0.0190",
+        "saved_cost": "$0.0009",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 121,
+        "cached_calls": 32,
+        "cache_rate": "26.4%",
+        "actual_cost": "$0.0890",
+        "saved_cost": "$0.0320",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 77,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0770",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3034,
+    "tool_calls_executed": 2884,
+    "tool_cache_hits": 150,
+    "tool_cache_hit_rate": 4.943968358602505,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8900,
+    "workflow_cache_hit_rate": 59.333333333333336,
+    "tools_saved_by_workflow": 9279,
+    "overall_caching_efficiency": 76.57760090960774,
+    "avg_execution_time": 0.023687619066238404,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.10048183619964651,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10261154174804688,
+    "p95_execution_time": 0.10839698314666747,
+    "p99_execution_time": 0.30569978475570686,
+    "memory": {
+      "peak_mb": 205.4375,
+      "avg_mb": 196.40203434405942,
+      "snapshots": [
+        {
+          "timestamp": 314.55446553230286,
+          "rss_mb": 203.7734375,
+          "vms_mb": 1638.83203125,
+          "percent": 0.2079800202669485,
+          "cache_size": 41116
+        },
+        {
+          "timestamp": 320.73101806640625,
+          "rss_mb": 203.953125,
+          "vms_mb": 1639.83203125,
+          "percent": 0.20816341713334194,
+          "cache_size": 41374
+        },
+        {
+          "timestamp": 324.35953092575073,
+          "rss_mb": 204.1640625,
+          "vms_mb": 1639.83203125,
+          "percent": 0.20837870910693418,
+          "cache_size": 41524
+        },
+        {
+          "timestamp": 328.558650970459,
+          "rss_mb": 204.3515625,
+          "vms_mb": 1639.83203125,
+          "percent": 0.20857007975012737,
+          "cache_size": 41760
+        },
+        {
+          "timestamp": 334.94537830352783,
+          "rss_mb": 204.546875,
+          "vms_mb": 1639.83203125,
+          "percent": 0.20876942417012023,
+          "cache_size": 42155
+        },
+        {
+          "timestamp": 340.733904838562,
+          "rss_mb": 204.7265625,
+          "vms_mb": 1639.83203125,
+          "percent": 0.20895282103651366,
+          "cache_size": 42440
+        },
+        {
+          "timestamp": 345.09587717056274,
+          "rss_mb": 204.890625,
+          "vms_mb": 1640.8359375,
+          "percent": 0.2091202703493076,
+          "cache_size": 42661
+        },
+        {
+          "timestamp": 348.9486699104309,
+          "rss_mb": 205.0859375,
+          "vms_mb": 1640.8359375,
+          "percent": 0.20931961476930047,
+          "cache_size": 42825
+        },
+        {
+          "timestamp": 351.8069860935211,
+          "rss_mb": 205.2578125,
+          "vms_mb": 1640.8359375,
+          "percent": 0.20949503785889423,
+          "cache_size": 42896
+        },
+        {
+          "timestamp": 355.5717511177063,
+          "rss_mb": 205.4375,
+          "vms_mb": 1640.8359375,
+          "percent": 0.20967843472528766,
+          "cache_size": 43065
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1478,
+        "cache_hits": 134,
+        "hit_rate": 9.066305818673884,
+        "avg_execution_time": 0.21452597209385463
+      },
+      "compute": {
+        "total_calls": 2822,
+        "cache_hits": 10,
+        "hit_rate": 0.3543586109142452,
+        "avg_execution_time": 0.09260320510837126
+      },
+      "external": {
+        "total_calls": 23,
+        "cache_hits": 5,
+        "hit_rate": 21.73913043478261,
+        "avg_execution_time": 0.5034537580278184
+      },
+      "filesystem": {
+        "total_calls": 405,
+        "cache_hits": 1,
+        "hit_rate": 0.24691358024691357,
+        "avg_execution_time": 0.041138204017488085
+      },
+      "database": {
+        "total_calls": 1190,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10290026183889693
+      }
+    },
+    "dependency_invalidations": 965,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 501
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 6,
+    "session_id": "tool_workflow_cache_run_6",
+    "total_questions": 15000,
+    "total_time": 356.7089698314667,
+    "cost_summary": {
+      "total_api_calls": 12358,
+      "cached_calls": 9446,
+      "cache_rate": "76.4%",
+      "total_cost_usd": "$2.2616",
+      "saved_cost_usd": "$6.1680",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "compute_fibonacci": {
+        "total_calls": 539,
+        "cached_calls": 493,
+        "cache_rate": "91.5%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0986",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1518,
+        "cached_calls": 1299,
+        "cache_rate": "85.6%",
+        "actual_cost": "$0.0657",
+        "saved_cost": "$0.3897",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2254,
+        "cached_calls": 2208,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0460",
+        "saved_cost": "$2.2080",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2559,
+        "cached_calls": 2030,
+        "cache_rate": "79.3%",
+        "actual_cost": "$0.2645",
+        "saved_cost": "$1.0150",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 641,
+        "cached_calls": 523,
+        "cache_rate": "81.6%",
+        "actual_cost": "$0.0118",
+        "saved_cost": "$0.0523",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 866,
+        "cached_calls": 857,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8570",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 220,
+        "cached_calls": 12,
+        "cache_rate": "5.5%",
+        "actual_cost": "$0.0208",
+        "saved_cost": "$0.0012",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 526,
+        "cached_calls": 514,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4112",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 261,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.2610",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 113,
+        "cached_calls": 26,
+        "cache_rate": "23.0%",
+        "actual_cost": "$0.0870",
+        "saved_cost": "$0.0260",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 590,
+        "cached_calls": 581,
+        "cache_rate": "98.5%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.5810",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 156,
+        "cached_calls": 51,
+        "cache_rate": "32.7%",
+        "actual_cost": "$0.2100",
+        "saved_cost": "$0.1020",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 83,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0830",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3082,
+    "tool_calls_executed": 2912,
+    "tool_cache_hits": 170,
+    "tool_cache_hit_rate": 5.515898767034393,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8878,
+    "workflow_cache_hit_rate": 59.18666666666667,
+    "tools_saved_by_workflow": 9276,
+    "overall_caching_efficiency": 76.43631655607703,
+    "avg_execution_time": 0.023760643831888834,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.09745711988700075,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10261433124542237,
+    "p95_execution_time": 0.1082459211349487,
+    "p99_execution_time": 0.3057748413085938,
+    "memory": {
+      "peak_mb": 205.93359375,
+      "avg_mb": 196.89534344059405,
+      "snapshots": [
+        {
+          "timestamp": 321.09557914733887,
+          "rss_mb": 204.2734375,
+          "vms_mb": 1639.18359375,
+          "percent": 0.20849034198213023,
+          "cache_size": 41391
+        },
+        {
+          "timestamp": 325.84800457954407,
+          "rss_mb": 204.453125,
+          "vms_mb": 1640.18359375,
+          "percent": 0.2086777257369235,
+          "cache_size": 41591
+        },
+        {
+          "timestamp": 330.30643820762634,
+          "rss_mb": 204.640625,
+          "vms_mb": 1640.18359375,
+          "percent": 0.20886510949171677,
+          "cache_size": 41878
+        },
+        {
+          "timestamp": 332.4113974571228,
+          "rss_mb": 204.8203125,
+          "vms_mb": 1640.18359375,
+          "percent": 0.20904850635811023,
+          "cache_size": 42024
+        },
+        {
+          "timestamp": 336.54534935951233,
+          "rss_mb": 205.0078125,
+          "vms_mb": 1640.18359375,
+          "percent": 0.20923987700130334,
+          "cache_size": 42224
+        },
+        {
+          "timestamp": 339.3849482536316,
+          "rss_mb": 205.1953125,
+          "vms_mb": 1640.18359375,
+          "percent": 0.20943124764449653,
+          "cache_size": 42374
+        },
+        {
+          "timestamp": 345.2213325500488,
+          "rss_mb": 205.3828125,
+          "vms_mb": 1641.1875,
+          "percent": 0.20962261828768963,
+          "cache_size": 42659
+        },
+        {
+          "timestamp": 350.4441158771515,
+          "rss_mb": 205.58203125,
+          "vms_mb": 1641.1875,
+          "percent": 0.20982594959608236,
+          "cache_size": 42855
+        },
+        {
+          "timestamp": 354.12541007995605,
+          "rss_mb": 205.76171875,
+          "vms_mb": 1641.1875,
+          "percent": 0.2100093464624758,
+          "cache_size": 42993
+        },
+        {
+          "timestamp": 356.7089698314667,
+          "rss_mb": 205.93359375,
+          "vms_mb": 1641.1875,
+          "percent": 0.2101847695520695,
+          "cache_size": 43097
+        }
+      ]
+    },
+    "category_breakdown": {
+      "compute": {
+        "total_calls": 2859,
+        "cache_hits": 11,
+        "hit_rate": 0.38474991255683805,
+        "avg_execution_time": 0.09206640117623832
+      },
+      "database": {
+        "total_calls": 1178,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10269567355235283
+      },
+      "api": {
+        "total_calls": 1510,
+        "cache_hits": 150,
+        "hit_rate": 9.933774834437086,
+        "avg_execution_time": 0.21282224269474254
+      },
+      "filesystem": {
+        "total_calls": 421,
+        "cache_hits": 1,
+        "hit_rate": 0.23752969121140144,
+        "avg_execution_time": 0.04166638283502488
+      },
+      "external": {
+        "total_calls": 26,
+        "cache_hits": 8,
+        "hit_rate": 30.76923076923077,
+        "avg_execution_time": 0.5026517974005805
+      }
+    },
+    "dependency_invalidations": 976,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 504
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 0,
+    "session_id": "tool_workflow_cache_run_0",
+    "total_questions": 15000,
+    "total_time": 357.1533091068268,
+    "cost_summary": {
+      "total_api_calls": 12370,
+      "cached_calls": 9491,
+      "cache_rate": "76.7%",
+      "total_cost_usd": "$2.2444",
+      "saved_cost_usd": "$6.2037",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_weather": {
+        "total_calls": 2267,
+        "cached_calls": 2219,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0480",
+        "saved_cost": "$2.2190",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 576,
+        "cached_calls": 564,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.5640",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2473,
+        "cached_calls": 1943,
+        "cache_rate": "78.6%",
+        "actual_cost": "$0.2650",
+        "saved_cost": "$0.9715",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 913,
+        "cached_calls": 904,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.9040",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 531,
+        "cached_calls": 519,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4152",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 521,
+        "cached_calls": 475,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0950",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 240,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.2400",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 132,
+        "cached_calls": 40,
+        "cache_rate": "30.3%",
+        "actual_cost": "$0.0920",
+        "saved_cost": "$0.0400",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 654,
+        "cached_calls": 544,
+        "cache_rate": "83.2%",
+        "actual_cost": "$0.0110",
+        "saved_cost": "$0.0544",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1592,
+        "cached_calls": 1373,
+        "cache_rate": "86.2%",
+        "actual_cost": "$0.0657",
+        "saved_cost": "$0.4119",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 206,
+        "cached_calls": 7,
+        "cache_rate": "3.4%",
+        "actual_cost": "$0.0199",
+        "saved_cost": "$0.0007",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 76,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0760",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 157,
+        "cached_calls": 51,
+        "cache_rate": "32.5%",
+        "actual_cost": "$0.2120",
+        "saved_cost": "$0.1020",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3032,
+    "tool_calls_executed": 2879,
+    "tool_cache_hits": 153,
+    "tool_cache_hit_rate": 5.0461741424802105,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8930,
+    "workflow_cache_hit_rate": 59.53333333333334,
+    "tools_saved_by_workflow": 9338,
+    "overall_caching_efficiency": 76.72594987873889,
+    "avg_execution_time": 0.02379801189104716,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.1034175138776805,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10252430438995361,
+    "p95_execution_time": 0.10745738744735715,
+    "p99_execution_time": 0.30582090616226204,
+    "memory": {
+      "peak_mb": 205.30859375,
+      "avg_mb": 196.03384127475246,
+      "snapshots": [
+        {
+          "timestamp": 319.1579852104187,
+          "rss_mb": 203.66796875,
+          "vms_mb": 1638.7109375,
+          "percent": 0.20787237428015237,
+          "cache_size": 41322
+        },
+        {
+          "timestamp": 323.66049337387085,
+          "rss_mb": 203.84375,
+          "vms_mb": 1639.71484375,
+          "percent": 0.20805975803494564,
+          "cache_size": 41503
+        },
+        {
+          "timestamp": 326.1030161380768,
+          "rss_mb": 204.01953125,
+          "vms_mb": 1639.71484375,
+          "percent": 0.20823518112453934,
+          "cache_size": 41601
+        },
+        {
+          "timestamp": 328.794704914093,
+          "rss_mb": 204.20703125,
+          "vms_mb": 1639.71484375,
+          "percent": 0.2084225648793326,
+          "cache_size": 41759
+        },
+        {
+          "timestamp": 332.40882658958435,
+          "rss_mb": 204.38671875,
+          "vms_mb": 1639.71484375,
+          "percent": 0.2086099486341259,
+          "cache_size": 42020
+        },
+        {
+          "timestamp": 336.59942984580994,
+          "rss_mb": 204.5703125,
+          "vms_mb": 1639.71484375,
+          "percent": 0.20879334550051934,
+          "cache_size": 42220
+        },
+        {
+          "timestamp": 342.26774406433105,
+          "rss_mb": 204.74609375,
+          "vms_mb": 1640.71484375,
+          "percent": 0.20897275547851293,
+          "cache_size": 42503
+        },
+        {
+          "timestamp": 348.76538729667664,
+          "rss_mb": 204.91796875,
+          "vms_mb": 1640.71484375,
+          "percent": 0.20914817856810664,
+          "cache_size": 42791
+        },
+        {
+          "timestamp": 352.0298361778259,
+          "rss_mb": 205.12109375,
+          "vms_mb": 1640.71484375,
+          "percent": 0.20935549676489923,
+          "cache_size": 42894
+        },
+        {
+          "timestamp": 357.1533091068268,
+          "rss_mb": 205.30859375,
+          "vms_mb": 1640.71484375,
+          "percent": 0.20954686740809236,
+          "cache_size": 43114
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1501,
+        "cache_hits": 133,
+        "hit_rate": 8.860759493670885,
+        "avg_execution_time": 0.21631768572400187
+      },
+      "filesystem": {
+        "total_calls": 398,
+        "cache_hits": 2,
+        "hit_rate": 0.5025125628140703,
+        "avg_execution_time": 0.04127190570638637
+      },
+      "external": {
+        "total_calls": 23,
+        "cache_hits": 5,
+        "hit_rate": 21.73913043478261,
+        "avg_execution_time": 0.5031668345133463
+      },
+      "database": {
+        "total_calls": 1146,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.1031633430334494
+      },
+      "compute": {
+        "total_calls": 2843,
+        "cache_hits": 13,
+        "hit_rate": 0.4572634540977841,
+        "avg_execution_time": 0.092279935809833
+      }
+    },
+    "dependency_invalidations": 973,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 506
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 8,
+    "session_id": "tool_workflow_cache_run_8",
+    "total_questions": 15000,
+    "total_time": 358.3138129711151,
+    "cost_summary": {
+      "total_api_calls": 12393,
+      "cached_calls": 9443,
+      "cache_rate": "76.2%",
+      "total_cost_usd": "$2.2889",
+      "saved_cost_usd": "$6.1760",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_user_location": {
+        "total_calls": 2513,
+        "cached_calls": 1978,
+        "cache_rate": "78.7%",
+        "actual_cost": "$0.2675",
+        "saved_cost": "$0.9890",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 218,
+        "cached_calls": 11,
+        "cache_rate": "5.0%",
+        "actual_cost": "$0.0207",
+        "saved_cost": "$0.0011",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2301,
+        "cached_calls": 2257,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0440",
+        "saved_cost": "$2.2570",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 905,
+        "cached_calls": 896,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8960",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1532,
+        "cached_calls": 1311,
+        "cache_rate": "85.6%",
+        "actual_cost": "$0.0663",
+        "saved_cost": "$0.3933",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 524,
+        "cached_calls": 478,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0956",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 567,
+        "cached_calls": 554,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0130",
+        "saved_cost": "$0.5540",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 509,
+        "cached_calls": 497,
+        "cache_rate": "97.6%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.3976",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 660,
+        "cached_calls": 534,
+        "cache_rate": "80.9%",
+        "actual_cost": "$0.0126",
+        "saved_cost": "$0.0534",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 91,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0910",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 258,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.2580",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 140,
+        "cached_calls": 37,
+        "cache_rate": "26.4%",
+        "actual_cost": "$0.1030",
+        "saved_cost": "$0.0370",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 143,
+        "cached_calls": 38,
+        "cache_rate": "26.6%",
+        "actual_cost": "$0.2100",
+        "saved_cost": "$0.0760",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3123,
+    "tool_calls_executed": 2950,
+    "tool_cache_hits": 173,
+    "tool_cache_hit_rate": 5.539545308997758,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8864,
+    "workflow_cache_hit_rate": 59.093333333333334,
+    "tools_saved_by_workflow": 9270,
+    "overall_caching_efficiency": 76.19623981279756,
+    "avg_execution_time": 0.023863702869415283,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.10372561943811867,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10260465145111083,
+    "p95_execution_time": 0.10845758914947509,
+    "p99_execution_time": 0.3050129342079163,
+    "memory": {
+      "peak_mb": 205.51171875,
+      "avg_mb": 196.31764387376236,
+      "snapshots": [
+        {
+          "timestamp": 329.449045419693,
+          "rss_mb": 203.87890625,
+          "vms_mb": 1639.8046875,
+          "percent": 0.20808766625374464,
+          "cache_size": 41826
+        },
+        {
+          "timestamp": 333.8267765045166,
+          "rss_mb": 204.078125,
+          "vms_mb": 1639.8046875,
+          "percent": 0.20829099756213737,
+          "cache_size": 42097
+        },
+        {
+          "timestamp": 337.75783348083496,
+          "rss_mb": 204.2578125,
+          "vms_mb": 1639.8046875,
+          "percent": 0.2084743944285308,
+          "cache_size": 42312
+        },
+        {
+          "timestamp": 340.656564950943,
+          "rss_mb": 204.453125,
+          "vms_mb": 1639.8046875,
+          "percent": 0.20867373884852367,
+          "cache_size": 42438
+        },
+        {
+          "timestamp": 342.46482491493225,
+          "rss_mb": 204.625,
+          "vms_mb": 1639.8046875,
+          "percent": 0.20884916193811737,
+          "cache_size": 42518
+        },
+        {
+          "timestamp": 346.8778691291809,
+          "rss_mb": 204.80859375,
+          "vms_mb": 1640.8046875,
+          "percent": 0.20903654569291064,
+          "cache_size": 42742
+        },
+        {
+          "timestamp": 349.35190868377686,
+          "rss_mb": 204.984375,
+          "vms_mb": 1640.8046875,
+          "percent": 0.20921994255930407,
+          "cache_size": 42836
+        },
+        {
+          "timestamp": 352.42711567878723,
+          "rss_mb": 205.15625,
+          "vms_mb": 1640.8046875,
+          "percent": 0.20939536564889777,
+          "cache_size": 42931
+        },
+        {
+          "timestamp": 354.06960272789,
+          "rss_mb": 205.328125,
+          "vms_mb": 1640.8046875,
+          "percent": 0.20956680185009163,
+          "cache_size": 42998
+        },
+        {
+          "timestamp": 358.3138129711151,
+          "rss_mb": 205.51171875,
+          "vms_mb": 1640.8046875,
+          "percent": 0.2097541856048849,
+          "cache_size": 43153
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1521,
+        "cache_hits": 153,
+        "hit_rate": 10.059171597633137,
+        "avg_execution_time": 0.20805491097489295
+      },
+      "compute": {
+        "total_calls": 2858,
+        "cache_hits": 12,
+        "hit_rate": 0.4198740377886634,
+        "avg_execution_time": 0.09203714781551402
+      },
+      "external": {
+        "total_calls": 23,
+        "cache_hits": 5,
+        "hit_rate": 21.73913043478261,
+        "avg_execution_time": 0.5034004582299126
+      },
+      "database": {
+        "total_calls": 1208,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10522513239588958
+      },
+      "filesystem": {
+        "total_calls": 463,
+        "cache_hits": 3,
+        "hit_rate": 0.6479481641468683,
+        "avg_execution_time": 0.04179916070855182
+      }
+    },
+    "dependency_invalidations": 1010,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 517
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 3,
+    "session_id": "tool_workflow_cache_run_3",
+    "total_questions": 15000,
+    "total_time": 359.7491374015808,
+    "cost_summary": {
+      "total_api_calls": 12372,
+      "cached_calls": 9496,
+      "cache_rate": "76.8%",
+      "total_cost_usd": "$2.2809",
+      "saved_cost_usd": "$6.2370",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_user_location": {
+        "total_calls": 2492,
+        "cached_calls": 1971,
+        "cache_rate": "79.1%",
+        "actual_cost": "$0.2605",
+        "saved_cost": "$0.9855",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2300,
+        "cached_calls": 2253,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0470",
+        "saved_cost": "$2.2530",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1520,
+        "cached_calls": 1305,
+        "cache_rate": "85.9%",
+        "actual_cost": "$0.0645",
+        "saved_cost": "$0.3915",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 595,
+        "cached_calls": 584,
+        "cache_rate": "98.2%",
+        "actual_cost": "$0.0110",
+        "saved_cost": "$0.5840",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 656,
+        "cached_calls": 553,
+        "cache_rate": "84.3%",
+        "actual_cost": "$0.0103",
+        "saved_cost": "$0.0553",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 534,
+        "cached_calls": 488,
+        "cache_rate": "91.4%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0976",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 68,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0680",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 258,
+        "cached_calls": 4,
+        "cache_rate": "1.6%",
+        "actual_cost": "$0.2540",
+        "saved_cost": "$0.0040",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 912,
+        "cached_calls": 903,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.9030",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 176,
+        "cached_calls": 54,
+        "cache_rate": "30.7%",
+        "actual_cost": "$0.2440",
+        "saved_cost": "$0.1080",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 133,
+        "cached_calls": 33,
+        "cache_rate": "24.8%",
+        "actual_cost": "$0.1000",
+        "saved_cost": "$0.0330",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 507,
+        "cached_calls": 495,
+        "cache_rate": "97.6%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.3960",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 189,
+        "cached_calls": 1,
+        "cache_rate": "0.5%",
+        "actual_cost": "$0.0188",
+        "saved_cost": "$0.0001",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3034,
+    "tool_calls_executed": 2876,
+    "tool_cache_hits": 158,
+    "tool_cache_hit_rate": 5.207646671061305,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8919,
+    "workflow_cache_hit_rate": 59.46,
+    "tools_saved_by_workflow": 9338,
+    "overall_caching_efficiency": 76.7539605560944,
+    "avg_execution_time": 0.023960907395680745,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.0985659690796141,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10257899761199951,
+    "p95_execution_time": 0.10831668376922607,
+    "p99_execution_time": 0.30734532117843627,
+    "memory": {
+      "peak_mb": 205.890625,
+      "avg_mb": 196.58454517326732,
+      "snapshots": [
+        {
+          "timestamp": 324.77588629722595,
+          "rss_mb": 204.26953125,
+          "vms_mb": 1639.29296875,
+          "percent": 0.20848635509373034,
+          "cache_size": 41543
+        },
+        {
+          "timestamp": 329.0923490524292,
+          "rss_mb": 204.453125,
+          "vms_mb": 1640.296875,
+          "percent": 0.20867373884852367,
+          "cache_size": 41795
+        },
+        {
+          "timestamp": 332.27437114715576,
+          "rss_mb": 204.65625,
+          "vms_mb": 1640.296875,
+          "percent": 0.2088810570453162,
+          "cache_size": 42018
+        },
+        {
+          "timestamp": 338.7358148097992,
+          "rss_mb": 204.8203125,
+          "vms_mb": 1640.296875,
+          "percent": 0.20904850635811023,
+          "cache_size": 42344
+        },
+        {
+          "timestamp": 341.0439238548279,
+          "rss_mb": 204.99609375,
+          "vms_mb": 1640.296875,
+          "percent": 0.20923190322450366,
+          "cache_size": 42457
+        },
+        {
+          "timestamp": 343.72596049308777,
+          "rss_mb": 205.1640625,
+          "vms_mb": 1640.296875,
+          "percent": 0.2094033394256975,
+          "cache_size": 42571
+        },
+        {
+          "timestamp": 346.4412910938263,
+          "rss_mb": 205.3515625,
+          "vms_mb": 1641.296875,
+          "percent": 0.2095907231804908,
+          "cache_size": 42718
+        },
+        {
+          "timestamp": 351.0446527004242,
+          "rss_mb": 205.51953125,
+          "vms_mb": 1641.296875,
+          "percent": 0.2097661462700845,
+          "cache_size": 42873
+        },
+        {
+          "timestamp": 356.09091687202454,
+          "rss_mb": 205.71875,
+          "vms_mb": 1641.296875,
+          "percent": 0.20996549069007736,
+          "cache_size": 43076
+        },
+        {
+          "timestamp": 359.7491374015808,
+          "rss_mb": 205.890625,
+          "vms_mb": 1641.296875,
+          "percent": 0.21014091377967106,
+          "cache_size": 43168
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1516,
+        "cache_hits": 136,
+        "hit_rate": 8.970976253298153,
+        "avg_execution_time": 0.21577368853748707
+      },
+      "database": {
+        "total_calls": 1182,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10448538066973742
+      },
+      "filesystem": {
+        "total_calls": 366,
+        "cache_hits": 2,
+        "hit_rate": 0.546448087431694,
+        "avg_execution_time": 0.04122358888060182
+      },
+      "compute": {
+        "total_calls": 2823,
+        "cache_hits": 15,
+        "hit_rate": 0.5313496280552604,
+        "avg_execution_time": 0.09257300813653191
+      },
+      "external": {
+        "total_calls": 23,
+        "cache_hits": 5,
+        "hit_rate": 21.73913043478261,
+        "avg_execution_time": 0.5033458603752984
+      }
+    },
+    "dependency_invalidations": 969,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 488
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 1,
+    "session_id": "tool_workflow_cache_run_1",
+    "total_questions": 15000,
+    "total_time": 363.63213539123535,
+    "cost_summary": {
+      "total_api_calls": 12366,
+      "cached_calls": 9440,
+      "cache_rate": "76.3%",
+      "total_cost_usd": "$2.3095",
+      "saved_cost_usd": "$6.2238",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "db_aggregation": {
+        "total_calls": 517,
+        "cached_calls": 505,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4040",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2335,
+        "cached_calls": 2288,
+        "cache_rate": "98.0%",
+        "actual_cost": "$0.0470",
+        "saved_cost": "$2.2880",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2485,
+        "cached_calls": 1955,
+        "cache_rate": "78.7%",
+        "actual_cost": "$0.2650",
+        "saved_cost": "$0.9775",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 179,
+        "cached_calls": 52,
+        "cache_rate": "29.1%",
+        "actual_cost": "$0.2540",
+        "saved_cost": "$0.1040",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 561,
+        "cached_calls": 548,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0130",
+        "saved_cost": "$0.5480",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 666,
+        "cached_calls": 542,
+        "cache_rate": "81.4%",
+        "actual_cost": "$0.0124",
+        "saved_cost": "$0.0542",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 499,
+        "cached_calls": 453,
+        "cache_rate": "90.8%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0906",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1514,
+        "cached_calls": 1296,
+        "cache_rate": "85.6%",
+        "actual_cost": "$0.0654",
+        "saved_cost": "$0.3888",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 906,
+        "cached_calls": 897,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8970",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 243,
+        "cached_calls": 3,
+        "cache_rate": "1.2%",
+        "actual_cost": "$0.2400",
+        "saved_cost": "$0.0030",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 196,
+        "cached_calls": 7,
+        "cache_rate": "3.6%",
+        "actual_cost": "$0.0189",
+        "saved_cost": "$0.0007",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 146,
+        "cached_calls": 42,
+        "cache_rate": "28.8%",
+        "actual_cost": "$0.1040",
+        "saved_cost": "$0.0420",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 87,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0870",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3083,
+    "tool_calls_executed": 2926,
+    "tool_cache_hits": 157,
+    "tool_cache_hit_rate": 5.092442426208239,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8872,
+    "workflow_cache_hit_rate": 59.14666666666667,
+    "tools_saved_by_workflow": 9283,
+    "overall_caching_efficiency": 76.33834708070516,
+    "avg_execution_time": 0.02421710605621338,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.10468019755331295,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10271599292755126,
+    "p95_execution_time": 0.10840423107147214,
+    "p99_execution_time": 0.3072322225570679,
+    "memory": {
+      "peak_mb": 205.69140625,
+      "avg_mb": 196.26361386138615,
+      "snapshots": [
+        {
+          "timestamp": 320.2466218471527,
+          "rss_mb": 203.75,
+          "vms_mb": 1638.70703125,
+          "percent": 0.20795609893654934,
+          "cache_size": 41344
+        },
+        {
+          "timestamp": 323.27006816864014,
+          "rss_mb": 203.921875,
+          "vms_mb": 1639.7109375,
+          "percent": 0.20813152202614305,
+          "cache_size": 41486
+        },
+        {
+          "timestamp": 326.4794592857361,
+          "rss_mb": 204.1171875,
+          "vms_mb": 1639.7109375,
+          "percent": 0.2083348533345358,
+          "cache_size": 41603
+        },
+        {
+          "timestamp": 331.67139768600464,
+          "rss_mb": 204.31640625,
+          "vms_mb": 1639.7109375,
+          "percent": 0.20853419775452867,
+          "cache_size": 41972
+        },
+        {
+          "timestamp": 335.5585436820984,
+          "rss_mb": 204.50390625,
+          "vms_mb": 1639.7109375,
+          "percent": 0.20873354217452147,
+          "cache_size": 42174
+        },
+        {
+          "timestamp": 340.3701226711273,
+          "rss_mb": 204.69921875,
+          "vms_mb": 1639.7109375,
+          "percent": 0.20892491281771464,
+          "cache_size": 42432
+        },
+        {
+          "timestamp": 344.1644814014435,
+          "rss_mb": 205.10546875,
+          "vms_mb": 1640.83984375,
+          "percent": 0.2093395492112998,
+          "cache_size": 42602
+        },
+        {
+          "timestamp": 352.8068218231201,
+          "rss_mb": 205.28125,
+          "vms_mb": 1640.83984375,
+          "percent": 0.20951895918929334,
+          "cache_size": 42938
+        },
+        {
+          "timestamp": 356.55540895462036,
+          "rss_mb": 205.47265625,
+          "vms_mb": 1640.83984375,
+          "percent": 0.20971431672088636,
+          "cache_size": 43098
+        },
+        {
+          "timestamp": 363.63213539123535,
+          "rss_mb": 205.69140625,
+          "vms_mb": 1640.83984375,
+          "percent": 0.20993758247127833,
+          "cache_size": 43183
+        }
+      ]
+    },
+    "category_breakdown": {
+      "database": {
+        "total_calls": 1168,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.1055220165481306
+      },
+      "api": {
+        "total_calls": 1548,
+        "cache_hits": 140,
+        "hit_rate": 9.043927648578812,
+        "avg_execution_time": 0.21429346705024893
+      },
+      "filesystem": {
+        "total_calls": 449,
+        "cache_hits": 1,
+        "hit_rate": 0.22271714922048996,
+        "avg_execution_time": 0.04153260907956532
+      },
+      "compute": {
+        "total_calls": 2820,
+        "cache_hits": 10,
+        "hit_rate": 0.3546099290780142,
+        "avg_execution_time": 0.09258644775987944
+      },
+      "external": {
+        "total_calls": 24,
+        "cache_hits": 6,
+        "hit_rate": 25.0,
+        "avg_execution_time": 0.5038539038764106
+      }
+    },
+    "dependency_invalidations": 1003,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 500
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 10,
+    "session_id": "tool_workflow_cache_run_10",
+    "total_questions": 15000,
+    "total_time": 363.6299214363098,
+    "cost_summary": {
+      "total_api_calls": 12399,
+      "cached_calls": 9447,
+      "cache_rate": "76.2%",
+      "total_cost_usd": "$2.2948",
+      "saved_cost_usd": "$6.1369",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_user_location": {
+        "total_calls": 2562,
+        "cached_calls": 2005,
+        "cache_rate": "78.3%",
+        "actual_cost": "$0.2785",
+        "saved_cost": "$1.0025",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1578,
+        "cached_calls": 1362,
+        "cache_rate": "86.3%",
+        "actual_cost": "$0.0648",
+        "saved_cost": "$0.4086",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 671,
+        "cached_calls": 547,
+        "cache_rate": "81.5%",
+        "actual_cost": "$0.0124",
+        "saved_cost": "$0.0547",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2205,
+        "cached_calls": 2158,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0470",
+        "saved_cost": "$2.1580",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 243,
+        "cached_calls": 2,
+        "cache_rate": "0.8%",
+        "actual_cost": "$0.2410",
+        "saved_cost": "$0.0020",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 127,
+        "cached_calls": 34,
+        "cache_rate": "26.8%",
+        "actual_cost": "$0.0930",
+        "saved_cost": "$0.0340",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 506,
+        "cached_calls": 494,
+        "cache_rate": "97.6%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.3952",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 523,
+        "cached_calls": 477,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0954",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 582,
+        "cached_calls": 572,
+        "cache_rate": "98.3%",
+        "actual_cost": "$0.0100",
+        "saved_cost": "$0.5720",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 899,
+        "cached_calls": 890,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8900",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 218,
+        "cached_calls": 5,
+        "cache_rate": "2.3%",
+        "actual_cost": "$0.0213",
+        "saved_cost": "$0.0005",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 169,
+        "cached_calls": 49,
+        "cache_rate": "29.0%",
+        "actual_cost": "$0.2400",
+        "saved_cost": "$0.0980",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 84,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0840",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3120,
+    "tool_calls_executed": 2952,
+    "tool_cache_hits": 168,
+    "tool_cache_hit_rate": 5.384615384615385,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8895,
+    "workflow_cache_hit_rate": 59.3,
+    "tools_saved_by_workflow": 9279,
+    "overall_caching_efficiency": 76.19162835712558,
+    "avg_execution_time": 0.024221364625295002,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.0987356239384966,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10267074108123779,
+    "p95_execution_time": 0.10861833095550537,
+    "p99_execution_time": 0.3071059322357178,
+    "memory": {
+      "peak_mb": 206.1796875,
+      "avg_mb": 197.08121905940595,
+      "snapshots": [
+        {
+          "timestamp": 325.5049169063568,
+          "rss_mb": 204.55078125,
+          "vms_mb": 1640.35546875,
+          "percent": 0.2087773979469199,
+          "cache_size": 41574
+        },
+        {
+          "timestamp": 329.1802010536194,
+          "rss_mb": 204.734375,
+          "vms_mb": 1640.35546875,
+          "percent": 0.20896079481331334,
+          "cache_size": 41801
+        },
+        {
+          "timestamp": 333.0014371871948,
+          "rss_mb": 204.9296875,
+          "vms_mb": 1640.35546875,
+          "percent": 0.2091601392333062,
+          "cache_size": 42068
+        },
+        {
+          "timestamp": 335.1520936489105,
+          "rss_mb": 205.1015625,
+          "vms_mb": 1640.35546875,
+          "percent": 0.2093355623228999,
+          "cache_size": 42158
+        },
+        {
+          "timestamp": 337.869863986969,
+          "rss_mb": 205.2890625,
+          "vms_mb": 1640.35546875,
+          "percent": 0.2095269329660931,
+          "cache_size": 42320
+        },
+        {
+          "timestamp": 343.9845042228699,
+          "rss_mb": 205.47265625,
+          "vms_mb": 1640.35546875,
+          "percent": 0.20971431672088636,
+          "cache_size": 42591
+        },
+        {
+          "timestamp": 349.09963607788086,
+          "rss_mb": 205.65625,
+          "vms_mb": 1641.359375,
+          "percent": 0.20990170047567963,
+          "cache_size": 42826
+        },
+        {
+          "timestamp": 355.0258457660675,
+          "rss_mb": 205.83203125,
+          "vms_mb": 1641.359375,
+          "percent": 0.21008111045367323,
+          "cache_size": 43046
+        },
+        {
+          "timestamp": 358.93836069107056,
+          "rss_mb": 206.01171875,
+          "vms_mb": 1641.359375,
+          "percent": 0.21026450732006663,
+          "cache_size": 43162
+        },
+        {
+          "timestamp": 363.6299214363098,
+          "rss_mb": 206.1796875,
+          "vms_mb": 1641.359375,
+          "percent": 0.21043993040966036,
+          "cache_size": 43183
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1595,
+        "cache_hits": 147,
+        "hit_rate": 9.216300940438872,
+        "avg_execution_time": 0.21013562718807663
+      },
+      "database": {
+        "total_calls": 1144,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10390381462924131
+      },
+      "filesystem": {
+        "total_calls": 437,
+        "cache_hits": 1,
+        "hit_rate": 0.2288329519450801,
+        "avg_execution_time": 0.041420388659206005
+      },
+      "compute": {
+        "total_calls": 2870,
+        "cache_hits": 12,
+        "hit_rate": 0.4181184668989547,
+        "avg_execution_time": 0.09188452961563313
+      },
+      "external": {
+        "total_calls": 26,
+        "cache_hits": 8,
+        "hit_rate": 30.76923076923077,
+        "avg_execution_time": 0.5033440060085721
+      }
+    },
+    "dependency_invalidations": 1017,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 488
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 4,
+    "session_id": "tool_workflow_cache_run_4",
+    "total_questions": 15000,
+    "total_time": 368.6518204212189,
+    "cost_summary": {
+      "total_api_calls": 12412,
+      "cached_calls": 9415,
+      "cache_rate": "75.9%",
+      "total_cost_usd": "$2.3187",
+      "saved_cost_usd": "$6.1392",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "get_weather": {
+        "total_calls": 2281,
+        "cached_calls": 2233,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0480",
+        "saved_cost": "$2.2330",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2504,
+        "cached_calls": 1933,
+        "cache_rate": "77.2%",
+        "actual_cost": "$0.2855",
+        "saved_cost": "$0.9665",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 875,
+        "cached_calls": 866,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8660",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 663,
+        "cached_calls": 537,
+        "cache_rate": "81.0%",
+        "actual_cost": "$0.0126",
+        "saved_cost": "$0.0537",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 524,
+        "cached_calls": 512,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4096",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 521,
+        "cached_calls": 475,
+        "cache_rate": "91.2%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0950",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 573,
+        "cached_calls": 560,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0130",
+        "saved_cost": "$0.5600",
+        "errors": 0
+      },
+      "db_query_user": {
+        "total_calls": 1586,
+        "cached_calls": 1361,
+        "cache_rate": "85.8%",
+        "actual_cost": "$0.0675",
+        "saved_cost": "$0.4083",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 224,
+        "cached_calls": 11,
+        "cache_rate": "4.9%",
+        "actual_cost": "$0.0213",
+        "saved_cost": "$0.0011",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 251,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.2510",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 129,
+        "cached_calls": 30,
+        "cache_rate": "23.3%",
+        "actual_cost": "$0.0990",
+        "saved_cost": "$0.0300",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 159,
+        "cached_calls": 45,
+        "cache_rate": "28.3%",
+        "actual_cost": "$0.2280",
+        "saved_cost": "$0.0900",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 90,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0900",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3156,
+    "tool_calls_executed": 2997,
+    "tool_cache_hits": 159,
+    "tool_cache_hit_rate": 5.038022813688213,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8853,
+    "workflow_cache_hit_rate": 59.019999999999996,
+    "tools_saved_by_workflow": 9256,
+    "overall_caching_efficiency": 75.85401224621334,
+    "avg_execution_time": 0.02455644857088725,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.10549750683459985,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.1026684045791626,
+    "p95_execution_time": 0.10870765447616575,
+    "p99_execution_time": 0.3065392780303955,
+    "memory": {
+      "peak_mb": 206.13671875,
+      "avg_mb": 196.83644028465346,
+      "snapshots": [
+        {
+          "timestamp": 329.5224657058716,
+          "rss_mb": 204.34765625,
+          "vms_mb": 1640.22265625,
+          "percent": 0.2085660928617275,
+          "cache_size": 41815
+        },
+        {
+          "timestamp": 332.9687592983246,
+          "rss_mb": 204.5390625,
+          "vms_mb": 1640.22265625,
+          "percent": 0.20876145039332047,
+          "cache_size": 42073
+        },
+        {
+          "timestamp": 336.47109961509705,
+          "rss_mb": 204.7421875,
+          "vms_mb": 1640.22265625,
+          "percent": 0.20897674236691277,
+          "cache_size": 42229
+        },
+        {
+          "timestamp": 339.5412094593048,
+          "rss_mb": 204.9296875,
+          "vms_mb": 1640.22265625,
+          "percent": 0.20916412612170607,
+          "cache_size": 42388
+        },
+        {
+          "timestamp": 344.10384035110474,
+          "rss_mb": 205.1015625,
+          "vms_mb": 1640.22265625,
+          "percent": 0.2093355623228999,
+          "cache_size": 42597
+        },
+        {
+          "timestamp": 349.17686915397644,
+          "rss_mb": 205.30859375,
+          "vms_mb": 1640.22265625,
+          "percent": 0.20954686740809236,
+          "cache_size": 42829
+        },
+        {
+          "timestamp": 352.7985715866089,
+          "rss_mb": 205.58984375,
+          "vms_mb": 1641.3515625,
+          "percent": 0.2098339233728821,
+          "cache_size": 42943
+        },
+        {
+          "timestamp": 356.8391766548157,
+          "rss_mb": 205.77734375,
+          "vms_mb": 1641.3515625,
+          "percent": 0.21002529401607523,
+          "cache_size": 43108
+        },
+        {
+          "timestamp": 363.6031701564789,
+          "rss_mb": 205.9765625,
+          "vms_mb": 1641.3515625,
+          "percent": 0.21022862532446793,
+          "cache_size": 43184
+        },
+        {
+          "timestamp": 368.6518204212189,
+          "rss_mb": 206.13671875,
+          "vms_mb": 1641.3515625,
+          "percent": 0.21039607463726193,
+          "cache_size": 43202
+        }
+      ]
+    },
+    "category_breakdown": {
+      "api": {
+        "total_calls": 1605,
+        "cache_hits": 139,
+        "hit_rate": 8.660436137071652,
+        "avg_execution_time": 0.20986163925181306
+      },
+      "external": {
+        "total_calls": 26,
+        "cache_hits": 8,
+        "hit_rate": 30.76923076923077,
+        "avg_execution_time": 0.5035611258612739
+      },
+      "database": {
+        "total_calls": 1194,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10374879158122256
+      },
+      "compute": {
+        "total_calls": 2869,
+        "cache_hits": 11,
+        "hit_rate": 0.3834088532589752,
+        "avg_execution_time": 0.0918253183865397
+      },
+      "filesystem": {
+        "total_calls": 459,
+        "cache_hits": 1,
+        "hit_rate": 0.2178649237472767,
+        "avg_execution_time": 0.04154340877283088
+      }
+    },
+    "dependency_invalidations": 1045,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 503
+  },
+  {
+    "config": "tool_workflow_cache",
+    "run_id": 2,
+    "session_id": "tool_workflow_cache_run_2",
+    "total_questions": 15000,
+    "total_time": 372.5351276397705,
+    "cost_summary": {
+      "total_api_calls": 12574,
+      "cached_calls": 9581,
+      "cache_rate": "76.2%",
+      "total_cost_usd": "$2.3153",
+      "saved_cost_usd": "$6.3170",
+      "error_count": 0
+    },
+    "cost_breakdown": {
+      "db_query_user": {
+        "total_calls": 1510,
+        "cached_calls": 1280,
+        "cache_rate": "84.8%",
+        "actual_cost": "$0.0690",
+        "saved_cost": "$0.3840",
+        "errors": 0
+      },
+      "compute_fibonacci": {
+        "total_calls": 536,
+        "cached_calls": 490,
+        "cache_rate": "91.4%",
+        "actual_cost": "$0.0092",
+        "saved_cost": "$0.0980",
+        "errors": 0
+      },
+      "external_medium": {
+        "total_calls": 878,
+        "cached_calls": 869,
+        "cache_rate": "99.0%",
+        "actual_cost": "$0.0090",
+        "saved_cost": "$0.8690",
+        "errors": 0
+      },
+      "fs_read_file": {
+        "total_calls": 663,
+        "cached_calls": 552,
+        "cache_rate": "83.3%",
+        "actual_cost": "$0.0111",
+        "saved_cost": "$0.0552",
+        "errors": 0
+      },
+      "get_user_location": {
+        "total_calls": 2581,
+        "cached_calls": 1999,
+        "cache_rate": "77.5%",
+        "actual_cost": "$0.2910",
+        "saved_cost": "$0.9995",
+        "errors": 0
+      },
+      "get_weather": {
+        "total_calls": 2361,
+        "cached_calls": 2311,
+        "cache_rate": "97.9%",
+        "actual_cost": "$0.0500",
+        "saved_cost": "$2.3110",
+        "errors": 0
+      },
+      "db_aggregation": {
+        "total_calls": 529,
+        "cached_calls": 517,
+        "cache_rate": "97.7%",
+        "actual_cost": "$0.0096",
+        "saved_cost": "$0.4136",
+        "errors": 0
+      },
+      "calculate_distance": {
+        "total_calls": 231,
+        "cached_calls": 7,
+        "cache_rate": "3.0%",
+        "actual_cost": "$0.0224",
+        "saved_cost": "$0.0007",
+        "errors": 0
+      },
+      "compute_statistics": {
+        "total_calls": 1170,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$1.1700",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      },
+      "db_query_products": {
+        "total_calls": 862,
+        "cached_calls": 852,
+        "cache_rate": "98.8%",
+        "actual_cost": "$0.0050",
+        "saved_cost": "$0.4260",
+        "errors": 0
+      },
+      "fs_read_config": {
+        "total_calls": 616,
+        "cached_calls": 604,
+        "cache_rate": "98.1%",
+        "actual_cost": "$0.0120",
+        "saved_cost": "$0.6040",
+        "errors": 0
+      },
+      "update_user_location": {
+        "total_calls": 176,
+        "cached_calls": 56,
+        "cache_rate": "31.8%",
+        "actual_cost": "$0.2400",
+        "saved_cost": "$0.1120",
+        "errors": 0
+      },
+      "db_write_order": {
+        "total_calls": 247,
+        "cached_calls": 3,
+        "cache_rate": "1.2%",
+        "actual_cost": "$0.2440",
+        "saved_cost": "$0.0030",
+        "errors": 0
+      },
+      "db_join_query": {
+        "total_calls": 140,
+        "cached_calls": 41,
+        "cache_rate": "29.3%",
+        "actual_cost": "$0.0990",
+        "saved_cost": "$0.0410",
+        "errors": 0
+      },
+      "fs_write_file": {
+        "total_calls": 74,
+        "cached_calls": 0,
+        "cache_rate": "0.0%",
+        "actual_cost": "$0.0740",
+        "saved_cost": "$0.0000",
+        "errors": 0
+      }
+    },
+    "tool_calls_attempted": 3178,
+    "tool_calls_executed": 2993,
+    "tool_cache_hits": 185,
+    "tool_cache_hit_rate": 5.821271239773442,
+    "workflow_queries": 15000,
+    "workflow_cache_hits": 8978,
+    "workflow_cache_hit_rate": 59.85333333333334,
+    "tools_saved_by_workflow": 9396,
+    "overall_caching_efficiency": 76.19691426753619,
+    "avg_execution_time": 0.024811189810434977,
+    "median_execution_time": 0.0,
+    "std_execution_time": 0.10118600649045319,
+    "p50_execution_time": 0.0,
+    "p90_execution_time": 0.10274782180786132,
+    "p95_execution_time": 0.10950440168380736,
+    "p99_execution_time": 0.3074352741241455,
+    "memory": {
+      "peak_mb": 206.6015625,
+      "avg_mb": 197.34742419554456,
+      "snapshots": [
+        {
+          "timestamp": 334.5446593761444,
+          "rss_mb": 204.94140625,
+          "vms_mb": 1640.5,
+          "percent": 0.2091720998985058,
+          "cache_size": 42127
+        },
+        {
+          "timestamp": 337.7120523452759,
+          "rss_mb": 205.1484375,
+          "vms_mb": 1640.5,
+          "percent": 0.2093834049836982,
+          "cache_size": 42302
+        },
+        {
+          "timestamp": 342.5949664115906,
+          "rss_mb": 205.3046875,
+          "vms_mb": 1640.5,
+          "percent": 0.2095428805196925,
+          "cache_size": 42519
+        },
+        {
+          "timestamp": 344.5749192237854,
+          "rss_mb": 205.49609375,
+          "vms_mb": 1640.5,
+          "percent": 0.20973823805128547,
+          "cache_size": 42626
+        },
+        {
+          "timestamp": 348.17663860321045,
+          "rss_mb": 205.66796875,
+          "vms_mb": 1640.5,
+          "percent": 0.20991764802927906,
+          "cache_size": 42776
+        },
+        {
+          "timestamp": 353.54690742492676,
+          "rss_mb": 205.8671875,
+          "vms_mb": 1641.50390625,
+          "percent": 0.21011699244927193,
+          "cache_size": 42970
+        },
+        {
+          "timestamp": 357.6488299369812,
+          "rss_mb": 206.0625,
+          "vms_mb": 1641.50390625,
+          "percent": 0.2103163368692648,
+          "cache_size": 43137
+        },
+        {
+          "timestamp": 362.1615161895752,
+          "rss_mb": 206.25,
+          "vms_mb": 1641.50390625,
+          "percent": 0.21050770751245793,
+          "cache_size": 43156
+        },
+        {
+          "timestamp": 369.82286262512207,
+          "rss_mb": 206.44921875,
+          "vms_mb": 1641.50390625,
+          "percent": 0.21071103882085063,
+          "cache_size": 43206
+        },
+        {
+          "timestamp": 372.5351276397705,
+          "rss_mb": 206.6015625,
+          "vms_mb": 1641.50390625,
+          "percent": 0.21086652746844506,
+          "cache_size": 43213
+        }
+      ]
+    },
+    "category_breakdown": {
+      "database": {
+        "total_calls": 1190,
+        "cache_hits": 0,
+        "hit_rate": 0.0,
+        "avg_execution_time": 0.10312605344948649
+      },
+      "compute": {
+        "total_calls": 2896,
+        "cache_hits": 16,
+        "hit_rate": 0.5524861878453038,
+        "avg_execution_time": 0.09156665371523963
+      },
+      "external": {
+        "total_calls": 26,
+        "cache_hits": 8,
+        "hit_rate": 30.76923076923077,
+        "avg_execution_time": 0.5049852530161539
+      },
+      "filesystem": {
+        "total_calls": 396,
+        "cache_hits": 2,
+        "hit_rate": 0.5050505050505051,
+        "avg_execution_time": 0.04136979882487186
+      },
+      "api": {
+        "total_calls": 1663,
+        "cache_hits": 159,
+        "hit_rate": 9.561034275405893,
+        "avg_execution_time": 0.2116975689187963
+      }
+    },
+    "dependency_invalidations": 1051,
+    "total_invalidations": 0,
+    "invalidation_rate": 0,
+    "write_operations": 494
+  }
+]

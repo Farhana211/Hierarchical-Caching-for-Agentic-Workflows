@@ -1,0 +1,1797 @@
+{
+  "baseline_no_cache": {
+    "description": "No caching (baseline)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      },
+      "ci_99": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.30975539293924975,
+      "std": 0.0051117611324283775,
+      "median": 0.3109323246955872,
+      "ci_95": {
+        "mean": 0.30975539293924975,
+        "lower": 0.3068252376376452,
+        "upper": 0.3126855482408543,
+        "width": 0.005860310603209129
+      },
+      "ci_99": {
+        "mean": 0.30975539293924975,
+        "lower": 0.3056885029453402,
+        "upper": 0.3138222829331593,
+        "width": 0.008133779987819056
+      }
+    },
+    "p90_execution_time": {
+      "mean": 1.5018508450190227,
+      "std": 7.297772171188514e-05,
+      "ci_95": {
+        "mean": 1.5018508450190227,
+        "lower": 1.5018090128495152,
+        "upper": 1.5018926771885301,
+        "width": 8.366433901496606e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 3.305915000279744,
+      "std": 0.5987877587780284,
+      "ci_95": {
+        "mean": 3.305915000279744,
+        "lower": 2.9626788668875235,
+        "upper": 3.6491511336719644,
+        "width": 0.686472266784441
+      }
+    },
+    "total_time": {
+      "mean": 4649.570889759064,
+      "std": 76.70303585904415,
+      "ci_95": {
+        "mean": 4649.570889759064,
+        "lower": 4605.603301808652,
+        "upper": 4693.538477709476,
+        "width": 87.9351759008241
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 215.06536458333332,
+      "std": 0.36084241472405776,
+      "ci_95": {
+        "mean": 215.06536458333332,
+        "lower": 214.85852308836596,
+        "upper": 215.27220607830068,
+        "width": 0.41368298993472763
+      }
+    },
+    "category_breakdown": {
+      "api": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.7505603463990566,
+        "total_calls": 149148
+      },
+      "compute": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.0682869377250783,
+        "total_calls": 56938
+      },
+      "filesystem": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.037219499905051065,
+        "total_calls": 39896
+      },
+      "database": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.08582426835542348,
+        "total_calls": 98996
+      },
+      "external": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.5014356305105472,
+        "total_calls": 26836
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 8.489993333333334,
+      "std_total_cost_usd": 0.06591998651564061,
+      "avg_saved_cost_usd": 0.0,
+      "std_saved_cost_usd": 0.0,
+      "total_across_runs": 127.3499,
+      "saved_across_runs": 0.0,
+      "avg_cache_rate_by_cost": 0.0
+    }
+  },
+  "simple_memoization": {
+    "description": "Simple dictionary memoization",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "min": 80.85934333198217,
+      "max": 81.25,
+      "median": 81.03766765721629,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      },
+      "ci_99": {
+        "mean": 81.04153228915466,
+        "lower": 80.96613454692212,
+        "upper": 81.1169300313872,
+        "width": 0.1507954844650783
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "median": 81.03766765721629,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.019205851621627808,
+      "std": 0.0001708655889924157,
+      "median": 0.019196858676274617,
+      "ci_95": {
+        "mean": 0.019205851621627808,
+        "lower": 0.01910790832997598,
+        "upper": 0.019303794913279635,
+        "width": 0.00019588658330365466
+      },
+      "ci_99": {
+        "mean": 0.019205851621627808,
+        "lower": 0.01906991186697683,
+        "upper": 0.019341791376278786,
+        "width": 0.0002718795093019574
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10081322828928631,
+      "std": 2.5026876671182897e-05,
+      "ci_95": {
+        "mean": 0.10081322828928631,
+        "lower": 0.10079888242423884,
+        "upper": 0.10082757415433377,
+        "width": 2.8691730094926315e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.20219289906819662,
+      "std": 0.0001490361736549209,
+      "ci_95": {
+        "mean": 0.20219289906819662,
+        "lower": 0.20210746879807007,
+        "upper": 0.20227832933832318,
+        "width": 0.00017086054025311492
+      }
+    },
+    "total_time": {
+      "mean": 288.3422780990601,
+      "std": 2.5773831597241714,
+      "ci_95": {
+        "mean": 288.3422780990601,
+        "lower": 286.8648747670025,
+        "upper": 289.81968143111766,
+        "width": 2.9548066641151536
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 205.49921875,
+      "std": 0.2677389837350145,
+      "ci_95": {
+        "mean": 205.49921875,
+        "lower": 205.345745850482,
+        "upper": 205.65269164951803,
+        "width": 0.30694579903604335
+      }
+    },
+    "category_breakdown": {
+      "database": {
+        "avg_hit_rate": 71.26083757963691,
+        "std_hit_rate": 0.6753392728050546,
+        "avg_exec_time": 0.10440702293904111,
+        "total_calls": 57805
+      },
+      "api": {
+        "avg_hit_rate": 90.41602647681766,
+        "std_hit_rate": 0.38921264523139615,
+        "avg_exec_time": 0.3586989159793469,
+        "total_calls": 78328
+      },
+      "compute": {
+        "avg_hit_rate": 14.608609632185138,
+        "std_hit_rate": 0.24093183860556866,
+        "avg_exec_time": 0.09127037058970887,
+        "total_calls": 49680
+      },
+      "external": {
+        "avg_hit_rate": 98.00702506772659,
+        "std_hit_rate": 0.04004012507404774,
+        "avg_exec_time": 0.502010370183874,
+        "total_calls": 13553
+      },
+      "filesystem": {
+        "avg_hit_rate": 83.13383798475684,
+        "std_hit_rate": 0.8971114920146059,
+        "avg_exec_time": 0.04640963879426778,
+        "total_calls": 21786
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.10404,
+      "std_total_cost_usd": 0.022026129936963575,
+      "avg_saved_cost_usd": 6.385953333333335,
+      "std_saved_cost_usd": 0.05250547738622671,
+      "total_across_runs": 31.5606,
+      "saved_across_runs": 95.7893,
+      "avg_cache_rate_by_cost": 75.21735937922777
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 3199.670035651946,
+        "p_value": 1.9576505261567137e-79,
+        "cohens_d": 1209.361598828603,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -212.55492797078375,
+        "p_value": 1.8275205457549088e-46,
+        "cohens_d": 80.33821133599152,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "lru_128": {
+    "description": "LRU cache (128 entries)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 62.60938665608308,
+      "std": 0.2587492945671866,
+      "min": 62.132323313723916,
+      "max": 63.1515540920408,
+      "median": 62.61895079300529,
+      "ci_95": {
+        "mean": 62.60938665608308,
+        "lower": 62.461066811391454,
+        "upper": 62.75770650077471,
+        "width": 0.29663968938325525
+      },
+      "ci_99": {
+        "mean": 62.60938665608308,
+        "lower": 62.40352709227625,
+        "upper": 62.815246219889914,
+        "width": 0.41171912761366514
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 62.60938665608308,
+      "std": 0.2587492945671866,
+      "median": 62.61895079300529,
+      "ci_95": {
+        "mean": 62.60938665608308,
+        "lower": 62.461066811391454,
+        "upper": 62.75770650077471,
+        "width": 0.29663968938325525
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 62.60938665608308,
+      "std": 0.2587492945671866,
+      "ci_95": {
+        "mean": 62.60938665608308,
+        "lower": 62.461066811391454,
+        "upper": 62.75770650077471,
+        "width": 0.29663968938325525
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.049400801519817766,
+      "std": 0.001216927811714047,
+      "median": 0.04932049827575684,
+      "ci_95": {
+        "mean": 0.049400801519817766,
+        "lower": 0.04870323616283286,
+        "upper": 0.05009836687680267,
+        "width": 0.0013951307139698083
+      },
+      "ci_99": {
+        "mean": 0.049400801519817766,
+        "lower": 0.048432620219370545,
+        "upper": 0.05036898282026499,
+        "width": 0.0019363626008944423
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.102732785542806,
+      "std": 8.877607262111681e-05,
+      "ci_95": {
+        "mean": 0.102732785542806,
+        "lower": 0.10268189746859686,
+        "upper": 0.10278367361701514,
+        "width": 0.00010177614841827554
+      }
+    },
+    "p99_execution_time": {
+      "mean": 1.5025222738583883,
+      "std": 0.0002031243801114842,
+      "ci_95": {
+        "mean": 1.5025222738583883,
+        "lower": 1.5024058392355941,
+        "upper": 1.5026387084811825,
+        "width": 0.00023286924558840738
+      }
+    },
+    "total_time": {
+      "mean": 741.5089469909668,
+      "std": 18.247857668851115,
+      "ci_95": {
+        "mean": 741.5089469909668,
+        "lower": 731.0489400567404,
+        "upper": 751.9689539251932,
+        "width": 20.92001386845277
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 207.18046875,
+      "std": 0.32500125200079355,
+      "ci_95": {
+        "mean": 207.18046875,
+        "lower": 206.99417206732895,
+        "upper": 207.36676543267103,
+        "width": 0.37259336534208387
+      }
+    },
+    "category_breakdown": {
+      "database": {
+        "avg_hit_rate": 37.89777424026102,
+        "std_hit_rate": 0.4179401078819512,
+        "avg_exec_time": 0.08120329159497011,
+        "total_calls": 71789
+      },
+      "filesystem": {
+        "avg_hit_rate": 57.38161540950876,
+        "std_hit_rate": 1.4849185961846798,
+        "avg_exec_time": 0.0386565390044028,
+        "total_calls": 25352
+      },
+      "external": {
+        "avg_hit_rate": 83.83711533971129,
+        "std_hit_rate": 1.0992322594205335,
+        "avg_exec_time": 0.5023154166435926,
+        "total_calls": 14597
+      },
+      "compute": {
+        "avg_hit_rate": 3.238396160842304,
+        "std_hit_rate": 0.14931904728053152,
+        "avg_exec_time": 0.07333149075388376,
+        "total_calls": 55152
+      },
+      "api": {
+        "avg_hit_rate": 68.47827432760299,
+        "std_hit_rate": 0.7324461655549661,
+        "avg_exec_time": 0.467299395665586,
+        "total_calls": 88528
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 3.101126666666667,
+      "std_total_cost_usd": 0.02645261087723143,
+      "avg_saved_cost_usd": 5.388866666666667,
+      "std_saved_cost_usd": 0.057531355701815945,
+      "total_across_runs": 46.5169,
+      "saved_across_runs": 80.833,
+      "avg_cache_rate_by_cost": 63.47215870265242
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 905.3662328045135,
+        "p_value": 4.3996255588641396e-64,
+        "cohens_d": 342.1962710623073,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -185.39075431222957,
+        "p_value": 8.383868081589409e-45,
+        "cohens_d": 70.07111875440498,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "lru_512": {
+    "description": "LRU cache (512 entries)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 76.89297602469475,
+      "std": 0.15231894557412504,
+      "min": 76.53830563437374,
+      "max": 77.08283217063587,
+      "median": 76.86129628142318,
+      "ci_95": {
+        "mean": 76.89297602469475,
+        "lower": 76.8056640094526,
+        "upper": 76.9802880399369,
+        "width": 0.17462403048429564
+      },
+      "ci_99": {
+        "mean": 76.89297602469475,
+        "lower": 76.77179188099358,
+        "upper": 77.01416016839592,
+        "width": 0.24236828740234273
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 76.89297602469475,
+      "std": 0.15231894557412504,
+      "median": 76.86129628142318,
+      "ci_95": {
+        "mean": 76.89297602469475,
+        "lower": 76.8056640094526,
+        "upper": 76.9802880399369,
+        "width": 0.17462403048429564
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 76.89297602469475,
+      "std": 0.15231894557412504,
+      "ci_95": {
+        "mean": 76.89297602469475,
+        "lower": 76.8056640094526,
+        "upper": 76.9802880399369,
+        "width": 0.17462403048429564
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.02570213901731703,
+      "std": 0.0005179992680108644,
+      "median": 0.025758912007013957,
+      "ci_95": {
+        "mean": 0.02570213901731703,
+        "lower": 0.025405212329612382,
+        "upper": 0.025999065705021675,
+        "width": 0.0005938533754092923
+      },
+      "ci_99": {
+        "mean": 0.02570213901731703,
+        "lower": 0.025290021552249745,
+        "upper": 0.026114256482384312,
+        "width": 0.0008242349301345667
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10153497378031412,
+      "std": 5.93251113194892e-05,
+      "ci_95": {
+        "mean": 0.10153497378031412,
+        "lower": 0.1015009675376616,
+        "upper": 0.10156898002296665,
+        "width": 6.801248530505233e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.2060521149635315,
+      "std": 0.0003989675631597224,
+      "ci_95": {
+        "mean": 0.2060521149635315,
+        "lower": 0.20582341943373758,
+        "upper": 0.20628081049332544,
+        "width": 0.00045739105958786386
+      }
+    },
+    "total_time": {
+      "mean": 385.8597428957621,
+      "std": 7.763755116796583,
+      "ci_95": {
+        "mean": 385.8597428957621,
+        "lower": 381.40941596801815,
+        "upper": 390.31006982350607,
+        "width": 8.900653855487917
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 206.01015625,
+      "std": 0.21041022061083442,
+      "ci_95": {
+        "mean": 206.01015625,
+        "lower": 205.88954524970825,
+        "upper": 206.13076725029174,
+        "width": 0.24122200058349108
+      }
+    },
+    "category_breakdown": {
+      "api": {
+        "avg_hit_rate": 87.28621260335512,
+        "std_hit_rate": 0.555089293423512,
+        "avg_exec_time": 0.47653880004517374,
+        "total_calls": 79637
+      },
+      "compute": {
+        "avg_hit_rate": 12.218629602299389,
+        "std_hit_rate": 0.30882629251047655,
+        "avg_exec_time": 0.08782126565051493,
+        "total_calls": 50738
+      },
+      "database": {
+        "avg_hit_rate": 58.16411288029261,
+        "std_hit_rate": 0.7806805174138495,
+        "avg_exec_time": 0.09042077725879055,
+        "total_calls": 62591
+      },
+      "filesystem": {
+        "avg_hit_rate": 79.18504902771784,
+        "std_hit_rate": 1.0097431103930592,
+        "avg_exec_time": 0.04368442164630869,
+        "total_calls": 22266
+      },
+      "external": {
+        "avg_hit_rate": 96.85826625714691,
+        "std_hit_rate": 0.39185835292829385,
+        "avg_exec_time": 0.5022024782695137,
+        "total_calls": 13632
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.3039666666666667,
+      "std_total_cost_usd": 0.024584159308158018,
+      "avg_saved_cost_usd": 6.186026666666667,
+      "std_saved_cost_usd": 0.051950828888692624,
+      "total_across_runs": 34.5595,
+      "saved_across_runs": 92.7904,
+      "avg_cache_rate_by_cost": 72.86248607846184
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 1888.8469234696731,
+        "p_value": 5.025059222203507e-73,
+        "cohens_d": 713.9170320243152,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -206.8591697483161,
+        "p_value": 3.908033463572856e-46,
+        "cohens_d": 78.18541708104857,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "ttl_only_300s": {
+    "description": "Fixed TTL (300s)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 81.04153028079273,
+      "std": 0.09411141780361201,
+      "min": 80.85934333198217,
+      "max": 81.25,
+      "median": 81.03616020755635,
+      "ci_95": {
+        "mean": 81.04153028079273,
+        "lower": 80.98758388880086,
+        "upper": 81.0954766727846,
+        "width": 0.10789278398374336
+      },
+      "ci_99": {
+        "mean": 81.04153028079273,
+        "lower": 80.96665573688064,
+        "upper": 81.11640482470482,
+        "width": 0.14974908782417629
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 81.04153028079273,
+      "std": 0.09411141780361201,
+      "median": 81.03616020755635,
+      "ci_95": {
+        "mean": 81.04153028079273,
+        "lower": 80.98758388880086,
+        "upper": 81.0954766727846,
+        "width": 0.10789278398374336
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 81.04153028079273,
+      "std": 0.09411141780361201,
+      "ci_95": {
+        "mean": 81.04153028079273,
+        "lower": 80.98758388880086,
+        "upper": 81.0954766727846,
+        "width": 0.10789278398374336
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.01933267148335775,
+      "std": 0.00016076186347094366,
+      "median": 0.019322291803359985,
+      "ci_95": {
+        "mean": 0.01933267148335775,
+        "lower": 0.01924051983261709,
+        "upper": 0.019424823134098407,
+        "width": 0.00018430330148131585
+      },
+      "ci_99": {
+        "mean": 0.01933267148335775,
+        "lower": 0.019204770199042133,
+        "upper": 0.019460572767673365,
+        "width": 0.0002558025686312318
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10121346314748128,
+      "std": 4.525716261547272e-05,
+      "ci_95": {
+        "mean": 0.10121346314748128,
+        "lower": 0.10118752091122692,
+        "upper": 0.10123940538373565,
+        "width": 5.188447250872863e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.20350777037938436,
+      "std": 0.00020055881689581552,
+      "ci_95": {
+        "mean": 0.20350777037938436,
+        "lower": 0.20339280638451326,
+        "upper": 0.20362273437425546,
+        "width": 0.00022992798974219575
+      }
+    },
+    "total_time": {
+      "mean": 290.3213881015778,
+      "std": 2.420255972170226,
+      "ci_95": {
+        "mean": 290.3213881015778,
+        "lower": 288.9340529573149,
+        "upper": 291.70872324584064,
+        "width": 2.7746702885257264
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 206.25260416666666,
+      "std": 0.4032054048798274,
+      "ci_95": {
+        "mean": 206.25260416666666,
+        "lower": 206.02147942821804,
+        "upper": 206.48372890511527,
+        "width": 0.4622494768972274
+      }
+    },
+    "category_breakdown": {
+      "api": {
+        "avg_hit_rate": 90.41602647681766,
+        "std_hit_rate": 0.38921264523139615,
+        "avg_exec_time": 0.35934795848166545,
+        "total_calls": 78328
+      },
+      "database": {
+        "avg_hit_rate": 71.26083757963691,
+        "std_hit_rate": 0.6753392728050546,
+        "avg_exec_time": 0.10556928095199145,
+        "total_calls": 57805
+      },
+      "compute": {
+        "avg_hit_rate": 14.608610876377154,
+        "std_hit_rate": 0.2367704029357381,
+        "avg_exec_time": 0.09191082920633703,
+        "total_calls": 49680
+      },
+      "external": {
+        "avg_hit_rate": 98.00702506772659,
+        "std_hit_rate": 0.04004012507404774,
+        "avg_exec_time": 0.5025978370949074,
+        "total_calls": 13553
+      },
+      "filesystem": {
+        "avg_hit_rate": 83.13383798475684,
+        "std_hit_rate": 0.8971114920146059,
+        "avg_exec_time": 0.04653282560372264,
+        "total_calls": 21786
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.10404,
+      "std_total_cost_usd": 0.022014019775285668,
+      "avg_saved_cost_usd": 6.385953333333334,
+      "std_saved_cost_usd": 0.052505388506535515,
+      "total_across_runs": 31.5606,
+      "saved_across_runs": 95.7893,
+      "avg_cache_rate_by_cost": 75.21735901835164
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 3222.0281819933875,
+        "p_value": 1.6108661437970418e-79,
+        "cohens_d": 1217.8121838280092,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -212.47575956714468,
+        "p_value": 1.846671364447129e-46,
+        "cohens_d": 80.30828849203111,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "raw_redis": {
+    "description": "Raw Redis (no intelligence)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "min": 80.85934333198217,
+      "max": 81.25,
+      "median": 81.03766765721629,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      },
+      "ci_99": {
+        "mean": 81.04153228915466,
+        "lower": 80.96613454692212,
+        "upper": 81.1169300313872,
+        "width": 0.1507954844650783
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "median": 81.03766765721629,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 81.04153228915466,
+      "std": 0.09476903697771766,
+      "ci_95": {
+        "mean": 81.04153228915466,
+        "lower": 80.98720893778236,
+        "upper": 81.09585564052696,
+        "width": 0.10864670274460764
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.01959196127785577,
+      "std": 0.0001643340130729249,
+      "median": 0.01958708678881327,
+      "ci_95": {
+        "mean": 0.01959196127785577,
+        "lower": 0.01949776200540056,
+        "upper": 0.019686160550310982,
+        "width": 0.00018839854491042168
+      },
+      "ci_99": {
+        "mean": 0.01959196127785577,
+        "lower": 0.01946121801029863,
+        "upper": 0.019722704545412913,
+        "width": 0.0002614865351142845
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10174589792887369,
+      "std": 5.1729843783041314e-05,
+      "ci_95": {
+        "mean": 0.10174589792887369,
+        "lower": 0.10171624543297546,
+        "upper": 0.10177555042477192,
+        "width": 5.930499179646054e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.20454161485036215,
+      "std": 0.00023806261324484088,
+      "ci_95": {
+        "mean": 0.20454161485036215,
+        "lower": 0.20440515299108475,
+        "upper": 0.20467807670963956,
+        "width": 0.00027292371855480724
+      }
+    },
+    "total_time": {
+      "mean": 294.20150707562766,
+      "std": 2.4826222136648672,
+      "ci_95": {
+        "mean": 294.20150707562766,
+        "lower": 292.77842245707944,
+        "upper": 295.6245916941759,
+        "width": 2.846169237096433
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 217.03776041666666,
+      "std": 0.4365355502995686,
+      "ci_95": {
+        "mean": 217.03776041666666,
+        "lower": 216.78753022712698,
+        "upper": 217.28799060620634,
+        "width": 0.5004603790793567
+      }
+    },
+    "category_breakdown": {
+      "api": {
+        "avg_hit_rate": 90.41602647681766,
+        "std_hit_rate": 0.38921264523139615,
+        "avg_exec_time": 0.36006954293795385,
+        "total_calls": 78328
+      },
+      "database": {
+        "avg_hit_rate": 71.26083757963691,
+        "std_hit_rate": 0.6753392728050546,
+        "avg_exec_time": 0.10589494155825845,
+        "total_calls": 57805
+      },
+      "external": {
+        "avg_hit_rate": 98.00702506772659,
+        "std_hit_rate": 0.04004012507404774,
+        "avg_exec_time": 0.5031998263465033,
+        "total_calls": 13553
+      },
+      "compute": {
+        "avg_hit_rate": 14.608609632185138,
+        "std_hit_rate": 0.24093183860556866,
+        "avg_exec_time": 0.09255476757574392,
+        "total_calls": 49680
+      },
+      "filesystem": {
+        "avg_hit_rate": 83.13383798475684,
+        "std_hit_rate": 0.8971114920146059,
+        "avg_exec_time": 0.04709213462724185,
+        "total_calls": 21786
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.10404,
+      "std_total_cost_usd": 0.022026129936963575,
+      "avg_saved_cost_usd": 6.385953333333335,
+      "std_saved_cost_usd": 0.05250547738622671,
+      "total_across_runs": 31.5606,
+      "saved_across_runs": 95.7893,
+      "avg_cache_rate_by_cost": 75.21735937922777
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 3199.670035651946,
+        "p_value": 1.9576505261567137e-79,
+        "cohens_d": 1209.361598828603,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -212.28134846447583,
+        "p_value": 1.8945864009896124e-46,
+        "cohens_d": 80.23480800206373,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "tool_cache_only": {
+    "description": "Tool-level caching only (fixed TTL)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 50.17100825944594,
+      "std": 0.3486798966231342,
+      "min": 49.54195379002837,
+      "max": 50.74674292977439,
+      "median": 50.10455203474344,
+      "ci_95": {
+        "mean": 50.17100825944594,
+        "lower": 49.97113854308307,
+        "upper": 50.37087797580881,
+        "width": 0.3997394327257382
+      },
+      "ci_99": {
+        "mean": 50.17100825944594,
+        "lower": 49.893600386519694,
+        "upper": 50.44841613237219,
+        "width": 0.554815745852494
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 50.17100825944594,
+      "std": 0.3486798966231342,
+      "median": 50.10455203474344,
+      "ci_95": {
+        "mean": 50.17100825944594,
+        "lower": 49.97113854308307,
+        "upper": 50.37087797580881,
+        "width": 0.3997394327257382
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 50.17100825944594,
+      "std": 0.3486798966231342,
+      "ci_95": {
+        "mean": 50.17100825944594,
+        "lower": 49.97113854308307,
+        "upper": 50.37087797580881,
+        "width": 0.3997394327257382
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.04462122340096367,
+      "std": 0.0003937868812386072,
+      "median": 0.0446356125831604,
+      "ci_95": {
+        "mean": 0.04462122340096367,
+        "lower": 0.04439549753313238,
+        "upper": 0.044846949268794956,
+        "width": 0.000451451735662578
+      },
+      "ci_99": {
+        "mean": 0.04462122340096367,
+        "lower": 0.04430792865076838,
+        "upper": 0.04493451815115895,
+        "width": 0.000626589500390573
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10451875209808352,
+      "std": 0.0001349613176921161,
+      "ci_95": {
+        "mean": 0.10451875209808352,
+        "lower": 0.10444138979372262,
+        "upper": 0.10459611440244442,
+        "width": 0.00015472460872179017
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.30842531410853075,
+      "std": 0.00031461359546382673,
+      "ci_95": {
+        "mean": 0.30842531410853075,
+        "lower": 0.30824497182124017,
+        "upper": 0.3086056563958213,
+        "width": 0.00036068457458116043
+      }
+    },
+    "total_time": {
+      "mean": 669.7864267190297,
+      "std": 5.9447643893947735,
+      "ci_95": {
+        "mean": 669.7864267190297,
+        "lower": 666.3787786617153,
+        "upper": 673.1940747763441,
+        "width": 6.815296114628836
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 217.71875,
+      "std": 0.3753009859807525,
+      "ci_95": {
+        "mean": 217.71875,
+        "lower": 217.50362058661787,
+        "upper": 217.93387941338213,
+        "width": 0.4302588267642591
+      }
+    },
+    "category_breakdown": {
+      "compute": {
+        "avg_hit_rate": 14.606284634340089,
+        "std_hit_rate": 0.2418515712639626,
+        "avg_exec_time": 0.09219668165849888,
+        "total_calls": 49681
+      },
+      "database": {
+        "avg_hit_rate": 11.530430603868371,
+        "std_hit_rate": 0.8522063548647021,
+        "avg_exec_time": 0.08635847495842629,
+        "total_calls": 88766
+      },
+      "filesystem": {
+        "avg_hit_rate": 33.34234385760885,
+        "std_hit_rate": 2.2297971183734515,
+        "avg_exec_time": 0.03834937878214164,
+        "total_calls": 29932
+      },
+      "external": {
+        "avg_hit_rate": 96.1529489232284,
+        "std_hit_rate": 0.19173732916733857,
+        "avg_exec_time": 0.5029272584029534,
+        "total_calls": 13681
+      },
+      "api": {
+        "avg_hit_rate": 54.59300650134335,
+        "std_hit_rate": 0.874068791039019,
+        "avg_exec_time": 0.1853322205494303,
+        "total_calls": 96481
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 3.906206666666667,
+      "std_total_cost_usd": 0.03219804272864353,
+      "avg_saved_cost_usd": 4.583786666666667,
+      "std_saved_cost_usd": 0.054372761154419476,
+      "total_across_runs": 58.5931,
+      "saved_across_runs": 68.7568,
+      "avg_cache_rate_by_cost": 53.989377352640986
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 538.3812645176669,
+        "p_value": 9.196247976054579e-58,
+        "cohens_d": 203.4889909214613,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -193.49703942610083,
+        "p_value": 2.5317558940455718e-45,
+        "cohens_d": 73.13500653553186,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "workflow_cache_only": {
+    "description": "Workflow-level caching only (no tool cache)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "ci_95": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      },
+      "ci_99": {
+        "mean": 0.0,
+        "lower": NaN,
+        "upper": NaN,
+        "width": NaN
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 72.12195192400655,
+      "std": 0.31607826387631993,
+      "median": 72.16227180527383,
+      "ci_95": {
+        "mean": 72.12195192400655,
+        "lower": 71.94077006189963,
+        "upper": 72.30313378611348,
+        "width": 0.36236372421385
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 57.21199999999999,
+      "std": 0.2811426420612597,
+      "ci_95": {
+        "mean": 57.21199999999999,
+        "lower": 57.05084387752062,
+        "upper": 57.37315612247936,
+        "width": 0.3223122449587379
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 72.12195192400655,
+      "std": 0.31607826387631993,
+      "ci_95": {
+        "mean": 72.12195192400655,
+        "lower": 71.94077006189963,
+        "upper": 72.30313378611348,
+        "width": 0.36236372421385
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.045418599230448414,
+      "std": 0.0008407266277119644,
+      "median": 0.04557043641408284,
+      "ci_95": {
+        "mean": 0.045418599230448414,
+        "lower": 0.044936679296873575,
+        "upper": 0.045900519164023254,
+        "width": 0.0009638398671496795
+      },
+      "ci_99": {
+        "mean": 0.045418599230448414,
+        "lower": 0.04474972159292258,
+        "upper": 0.04608747686797425,
+        "width": 0.001337755275051672
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10235704263051353,
+      "std": 8.718807724157144e-05,
+      "ci_95": {
+        "mean": 0.10235704263051353,
+        "lower": 0.10230706482440177,
+        "upper": 0.10240702043662528,
+        "width": 9.99556122235068e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.5026305905977886,
+      "std": 0.000627783153769946,
+      "ci_95": {
+        "mean": 0.5026305905977886,
+        "lower": 0.5022707337718099,
+        "upper": 0.5029904474237673,
+        "width": 0.0007197136519574432
+      }
+    },
+    "total_time": {
+      "mean": 681.6648588657379,
+      "std": 12.607363135619504,
+      "ci_95": {
+        "mean": 681.6648588657379,
+        "lower": 674.43808692275,
+        "upper": 688.8916308087257,
+        "width": 14.453543885975705
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 204.40234375,
+      "std": 0.2591858936631358,
+      "ci_95": {
+        "mean": 204.40234375,
+        "lower": 204.2537736386933,
+        "upper": 204.5509138613067,
+        "width": 0.29714022261339323
+      }
+    },
+    "category_breakdown": {
+      "compute": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.08908393598957424,
+        "total_calls": 43926
+      },
+      "database": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.09669093728711427,
+        "total_calls": 22202
+      },
+      "api": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.46232364460921066,
+        "total_calls": 29608
+      },
+      "external": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.5026038098371912,
+        "total_calls": 682
+      },
+      "filesystem": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.04014663842689867,
+        "total_calls": 7128
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.6279266666666663,
+      "std_total_cost_usd": 0.029636676976716226,
+      "avg_saved_cost_usd": 5.855466666666667,
+      "std_saved_cost_usd": 0.06026126081949787,
+      "total_across_runs": 39.4189,
+      "saved_across_runs": 87.832,
+      "avg_cache_rate_by_cost": 69.02193370331977
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": NaN,
+        "p_value": NaN,
+        "cohens_d": 0,
+        "significant_95": "False",
+        "significant_99": "False"
+      },
+      "execution_time": {
+        "t_statistic": -190.9216920052248,
+        "p_value": 3.683290224954695e-45,
+        "cohens_d": 72.16161670478478,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "tool_workflow_cache": {
+    "description": "Tool + workflow caching (fixed TTL)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 5.222372132035475,
+      "std": 0.31415824922977725,
+      "min": 4.7097844112769485,
+      "max": 5.821271239773442,
+      "median": 5.207646671061305,
+      "ci_95": {
+        "mean": 5.222372132035475,
+        "lower": 5.042290857563612,
+        "upper": 5.402453406507338,
+        "width": 0.3601625489437268
+      },
+      "ci_99": {
+        "mean": 5.222372132035475,
+        "lower": 4.9724294983330735,
+        "upper": 5.472314765737877,
+        "width": 0.4998852674048031
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 76.49032505199573,
+      "std": 0.2991648844250119,
+      "median": 76.43631655607703,
+      "ci_95": {
+        "mean": 76.49032505199573,
+        "lower": 76.31883824941592,
+        "upper": 76.66181185457553,
+        "width": 0.3429736051596137
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 59.371111111111105,
+      "std": 0.28826599513403905,
+      "ci_95": {
+        "mean": 59.371111111111105,
+        "lower": 59.20587175190946,
+        "upper": 59.53635047031275,
+        "width": 0.3304787184032847
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 76.49032505199573,
+      "std": 0.2991648844250119,
+      "ci_95": {
+        "mean": 76.49032505199573,
+        "lower": 76.31883824941592,
+        "upper": 76.66181185457553,
+        "width": 0.3429736051596137
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.023818775039248993,
+      "std": 0.0004636560727375671,
+      "median": 0.023760643831888834,
+      "ci_95": {
+        "mean": 0.023818775039248993,
+        "lower": 0.02355299886848185,
+        "upper": 0.024084551210016136,
+        "width": 0.0005315523415342846
+      },
+      "ci_99": {
+        "mean": 0.023818775039248993,
+        "lower": 0.023449892731570422,
+        "upper": 0.024187657346927564,
+        "width": 0.0007377646153571421
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.10259203592936196,
+      "std": 8.894725310286274e-05,
+      "ci_95": {
+        "mean": 0.10259203592936196,
+        "lower": 0.10254104973135887,
+        "upper": 0.10264302212736505,
+        "width": 0.00010197239600617802
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.30631153345108036,
+      "std": 0.0007620273749610778,
+      "ci_95": {
+        "mean": 0.30631153345108036,
+        "lower": 0.3058747253736166,
+        "upper": 0.30674834152854413,
+        "width": 0.0008736161549275367
+      }
+    },
+    "total_time": {
+      "mean": 357.5832025210063,
+      "std": 6.976492612561836,
+      "ci_95": {
+        "mean": 357.5832025210063,
+        "lower": 353.5841489099875,
+        "upper": 361.58225613202507,
+        "width": 7.998107222037561
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 205.84401041666666,
+      "std": 0.3704214487528774,
+      "ci_95": {
+        "mean": 205.84401041666666,
+        "lower": 205.63167804358184,
+        "upper": 206.05634278975148,
+        "width": 0.4246647461696398
+      }
+    },
+    "category_breakdown": {
+      "external": {
+        "avg_hit_rate": 24.942414107631503,
+        "std_hit_rate": 4.451426070133283,
+        "avg_exec_time": 0.5035251140594482,
+        "total_calls": 361
+      },
+      "database": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.10394755073380578,
+        "total_calls": 17478
+      },
+      "api": {
+        "avg_hit_rate": 9.32365136872536,
+        "std_hit_rate": 0.5103749424168881,
+        "avg_exec_time": 0.2115788347549771,
+        "total_calls": 22820
+      },
+      "compute": {
+        "avg_hit_rate": 0.39409912604643843,
+        "std_hit_rate": 0.07424876732935029,
+        "avg_exec_time": 0.0922976603010683,
+        "total_calls": 42592
+      },
+      "filesystem": {
+        "avg_hit_rate": 0.31269163992021387,
+        "std_hit_rate": 0.1838005866612687,
+        "avg_exec_time": 0.041441352046545116,
+        "total_calls": 6458
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.2743733333333327,
+      "std_total_cost_usd": 0.02631229032642777,
+      "avg_saved_cost_usd": 6.207686666666666,
+      "std_saved_cost_usd": 0.05958656298939298,
+      "total_across_runs": 34.1156,
+      "saved_across_runs": 93.1153,
+      "avg_cache_rate_by_cost": 73.18549472424941
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 62.19899465387267,
+        "p_value": 1.4668206297603997e-31,
+        "cohens_d": 23.509010236054724,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -208.4414293565696,
+        "p_value": 3.157598974726202e-46,
+        "cohens_d": 78.78345500004592,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "full_system": {
+    "description": "Full system (all contributions)",
+    "num_runs": 15,
+    "tool_cache_hit_rate": {
+      "mean": 5.368786844210461,
+      "std": 0.3516828846032983,
+      "min": 4.681274900398407,
+      "max": 6.0012634238787115,
+      "median": 5.293737895416398,
+      "ci_95": {
+        "mean": 5.368786844210461,
+        "lower": 5.167195760020969,
+        "upper": 5.570377928399952,
+        "width": 0.4031821683789829
+      },
+      "ci_99": {
+        "mean": 5.368786844210461,
+        "lower": 5.088989810004572,
+        "upper": 5.64858387841635,
+        "width": 0.5595940684117782
+      }
+    },
+    "effective_hit_rates": {
+      "mean": 76.53787309272006,
+      "std": 0.3091872163190575,
+      "median": 76.53889881435764,
+      "ci_95": {
+        "mean": 76.53787309272006,
+        "lower": 76.36064130555022,
+        "upper": 76.7151048798899,
+        "width": 0.35446357433968956
+      },
+      "note": "Includes workflow cache impact"
+    },
+    "workflow_cache_hit_rate": {
+      "mean": 59.38577777777778,
+      "std": 0.30663639142021404,
+      "ci_95": {
+        "mean": 59.38577777777778,
+        "lower": 59.21000817025741,
+        "upper": 59.561547385298155,
+        "width": 0.35153921504074503
+      }
+    },
+    "overall_caching_efficiency": {
+      "mean": 76.53787309272006,
+      "std": 0.3091872163190575,
+      "ci_95": {
+        "mean": 76.53787309272006,
+        "lower": 76.36064130555022,
+        "upper": 76.7151048798899,
+        "width": 0.35446357433968956
+      }
+    },
+    "avg_execution_time": {
+      "mean": 0.023286976209216652,
+      "std": 0.0003150450760197715,
+      "median": 0.023250514618555703,
+      "ci_95": {
+        "mean": 0.023286976209216652,
+        "lower": 0.023106386589352077,
+        "upper": 0.023467565829081227,
+        "width": 0.0003611792397291494
+      },
+      "ci_99": {
+        "mean": 0.023286976209216652,
+        "lower": 0.02303632802083258,
+        "upper": 0.023537624397600723,
+        "width": 0.0005012963767681428
+      }
+    },
+    "p90_execution_time": {
+      "mean": 0.1026740296681722,
+      "std": 8.182128884528165e-05,
+      "ci_95": {
+        "mean": 0.1026740296681722,
+        "lower": 0.10262712820367043,
+        "upper": 0.10272093113267397,
+        "width": 9.38029290035447e-05
+      }
+    },
+    "p99_execution_time": {
+      "mean": 0.30425868209203083,
+      "std": 0.008668516033713831,
+      "ci_95": {
+        "mean": 0.30425868209203083,
+        "lower": 0.2992897296008638,
+        "upper": 0.30922763458319785,
+        "width": 0.009937904982334045
+      }
+    },
+    "total_time": {
+      "mean": 349.60927097002667,
+      "std": 4.753463561660981,
+      "ci_95": {
+        "mean": 349.60927097002667,
+        "lower": 346.8844984121258,
+        "upper": 352.3340435279275,
+        "width": 5.449545115801698
+      }
+    },
+    "peak_memory_mb": {
+      "mean": 205.94453125,
+      "std": 0.16596246085021255,
+      "ci_95": {
+        "mean": 205.94453125,
+        "lower": 205.84939852139058,
+        "upper": 206.03966397860944,
+        "width": 0.19026545721885668
+      }
+    },
+    "category_breakdown": {
+      "api": {
+        "avg_hit_rate": 9.807952220823484,
+        "std_hit_rate": 0.6113758716383434,
+        "avg_exec_time": 0.19965483659634237,
+        "total_calls": 22713
+      },
+      "compute": {
+        "avg_hit_rate": 0.35174817957696547,
+        "std_hit_rate": 0.09156252174164618,
+        "avg_exec_time": 0.0922823920586354,
+        "total_calls": 42572
+      },
+      "database": {
+        "avg_hit_rate": 0.0,
+        "std_hit_rate": 0.0,
+        "avg_exec_time": 0.10393765685852212,
+        "total_calls": 17506
+      },
+      "external": {
+        "avg_hit_rate": 23.718637883855276,
+        "std_hit_rate": 4.103404080931469,
+        "avg_exec_time": 0.5031037878107142,
+        "total_calls": 355
+      },
+      "filesystem": {
+        "avg_hit_rate": 0.16747293092887183,
+        "std_hit_rate": 0.23702053116395108,
+        "avg_exec_time": 0.04127128041745179,
+        "total_calls": 6451
+      }
+    },
+    "cost_analysis": {
+      "avg_total_cost_usd": 2.2678333333333334,
+      "std_total_cost_usd": 0.025381375499019403,
+      "avg_saved_cost_usd": 6.214159999999999,
+      "std_saved_cost_usd": 0.06079383521377805,
+      "total_across_runs": 34.0175,
+      "saved_across_runs": 93.2124,
+      "avg_cache_rate_by_cost": 73.26225529624156
+    },
+    "significance": {
+      "hit_rate": {
+        "t_statistic": 57.1200983417617,
+        "p_value": 1.5645217639459486e-30,
+        "cohens_d": 21.589367867979192,
+        "significant_95": "True",
+        "significant_99": "True"
+      },
+      "execution_time": {
+        "t_statistic": -209.2892674124302,
+        "p_value": 2.8185513652718478e-46,
+        "cohens_d": 79.10390766402642,
+        "significant_95": "True",
+        "significant_99": "True"
+      }
+    }
+  },
+  "pairwise_comparisons": {
+    "tool_cache_contribution": {
+      "improvement": 50.17100825944594,
+      "p_value": 9.196247976054579e-58,
+      "significant": "True",
+      "description": "Tool-level caching vs no cache"
+    },
+    "workflow_cache_contribution": {
+      "improvement": 26.319316792549785,
+      "efficiency_improvement": 26.319316792549785,
+      "tool_call_reduction_pct": 75.1934894893601,
+      "tools_saved_mean": 9307.4,
+      "tools_saved_total": 139611,
+      "tools_attempted_total": 46058,
+      "total_would_need": 185669,
+      "p_value": 1.4448263041201999e-46,
+      "significant": "True",
+      "description": "Workflow cache improved overall efficiency by 26.3% by bypassing 75.2% of tool calls (139,611 of 185,669 total)"
+    },
+    "adaptive_ttl_contribution": {
+      "improvement": 0.047548040724336715,
+      "efficiency_improvement": 0.047548040724336715,
+      "tool_hit_rate_improvement": 0.1464147121749857,
+      "p_value": 0.6823750008400512,
+      "significant": "False",
+      "description": "Adaptive TTL improved overall efficiency by 0.0% (tool hit rate +0.1pp)"
+    }
+  },
+  "fair_comparison": {
+    "efficiency_gap": 4.503659196434597,
+    "efficiency_gap_pct": 5.557223647210453,
+    "explanation": {
+      "simple_memoization_advantages": [
+        "No TTL expiration (infinite cache lifetime)",
+        "No session isolation (global cache sharing)",
+        "Unbounded memory (no eviction)",
+        "No write invalidation (stale data acceptable)"
+      ],
+      "our_system_constraints": [
+        "TTL-based expiration (prevents stale data)",
+        "Session isolation (security/privacy)",
+        "Bounded memory (production-safe)",
+        "Dependency invalidation (data consistency)"
+      ],
+      "efficiency_cost_of_production_safety": "4.5%"
+    }
+  },
+  "cost_comparisons": {
+    "simple_memoization": {
+      "avg_cost_per_run": 2.10404,
+      "avg_savings_per_run": 6.385953333333335,
+      "vs_baseline_absolute_savings": 6.385953333333335,
+      "vs_baseline_savings_pct": 75.21741281304502,
+      "roi_ratio": 3.035091221332929,
+      "roi_pct": 303.50912213329286
+    },
+    "lru_128": {
+      "avg_cost_per_run": 3.101126666666667,
+      "avg_savings_per_run": 5.388866666666667,
+      "vs_baseline_absolute_savings": 5.388866666666667,
+      "vs_baseline_savings_pct": 63.47315545595246,
+      "roi_ratio": 1.737712530284692,
+      "roi_pct": 173.7712530284692
+    },
+    "lru_512": {
+      "avg_cost_per_run": 2.3039666666666667,
+      "avg_savings_per_run": 6.186026666666667,
+      "vs_baseline_absolute_savings": 6.186026666666668,
+      "vs_baseline_savings_pct": 72.86256212215322,
+      "roi_ratio": 2.684946252115916,
+      "roi_pct": 268.4946252115916
+    },
+    "ttl_only_300s": {
+      "avg_cost_per_run": 2.10404,
+      "avg_savings_per_run": 6.385953333333334,
+      "vs_baseline_absolute_savings": 6.385953333333335,
+      "vs_baseline_savings_pct": 75.21741281304502,
+      "roi_ratio": 3.035091221332929,
+      "roi_pct": 303.50912213329286
+    },
+    "raw_redis": {
+      "avg_cost_per_run": 2.10404,
+      "avg_savings_per_run": 6.385953333333335,
+      "vs_baseline_absolute_savings": 6.385953333333335,
+      "vs_baseline_savings_pct": 75.21741281304502,
+      "roi_ratio": 3.035091221332929,
+      "roi_pct": 303.50912213329286
+    },
+    "tool_cache_only": {
+      "avg_cost_per_run": 3.906206666666667,
+      "avg_savings_per_run": 4.583786666666667,
+      "vs_baseline_absolute_savings": 4.583786666666668,
+      "vs_baseline_savings_pct": 53.990462497418534,
+      "roi_ratio": 1.1734624042762716,
+      "roi_pct": 117.34624042762715
+    },
+    "workflow_cache_only": {
+      "avg_cost_per_run": 2.6279266666666663,
+      "avg_savings_per_run": 5.855466666666667,
+      "vs_baseline_absolute_savings": 5.862066666666668,
+      "vs_baseline_savings_pct": 69.0467758514141,
+      "roi_ratio": 2.230681221444536,
+      "roi_pct": 223.0681221444536
+    },
+    "tool_workflow_cache": {
+      "avg_cost_per_run": 2.2743733333333327,
+      "avg_savings_per_run": 6.207686666666666,
+      "vs_baseline_absolute_savings": 6.215620000000001,
+      "vs_baseline_savings_pct": 73.21112933736109,
+      "roi_ratio": 2.732893456366004,
+      "roi_pct": 273.2893456366004
+    },
+    "full_system": {
+      "avg_cost_per_run": 2.2678333333333334,
+      "avg_savings_per_run": 6.214159999999999,
+      "vs_baseline_absolute_savings": 6.222160000000001,
+      "vs_baseline_savings_pct": 73.28816119996952,
+      "roi_ratio": 2.743658411111928,
+      "roi_pct": 274.3658411111928
+    }
+  }
+}

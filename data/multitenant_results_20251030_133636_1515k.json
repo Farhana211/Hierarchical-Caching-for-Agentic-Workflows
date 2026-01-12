@@ -1,0 +1,182 @@
+{
+  "config": {
+    "num_tenants": 15,
+    "queries_per_tenant": 15000,
+    "total_queries": 225000,
+    "total_time": 470.7940378189087
+  },
+  "per_tenant_results": [
+    {
+      "tenant_id": 11,
+      "session_id": "tenant_11",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 444.0080814361572,
+      "tool_hit_rate": 9.92,
+      "workflow_hit_rate": 56.05,
+      "overall_efficiency": 73.35
+    },
+    {
+      "tenant_id": 15,
+      "session_id": "tenant_15",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 445.2058539390564,
+      "tool_hit_rate": 9.91,
+      "workflow_hit_rate": 56.05,
+      "overall_efficiency": 73.35
+    },
+    {
+      "tenant_id": 3,
+      "session_id": "tenant_3",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 448.6431565284729,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.07,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 9,
+      "session_id": "tenant_9",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 449.4431834220886,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.07,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 14,
+      "session_id": "tenant_14",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 453.09420347213745,
+      "tool_hit_rate": 9.94,
+      "workflow_hit_rate": 56.07,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 8,
+      "session_id": "tenant_8",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 453.871214389801,
+      "tool_hit_rate": 9.94,
+      "workflow_hit_rate": 56.07,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 13,
+      "session_id": "tenant_13",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 455.6798269748688,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.08,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 10,
+      "session_id": "tenant_10",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 455.8684756755829,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.08,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 12,
+      "session_id": "tenant_12",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 457.3765892982483,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.08,
+      "overall_efficiency": 73.37
+    },
+    {
+      "tenant_id": 4,
+      "session_id": "tenant_4",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 459.16959142684937,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.09,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 1,
+      "session_id": "tenant_1",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 459.22042441368103,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.09,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 2,
+      "session_id": "tenant_2",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 461.50347232818604,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.09,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 6,
+      "session_id": "tenant_6",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 462.3592960834503,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.09,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 5,
+      "session_id": "tenant_5",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 465.6512529850006,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.08,
+      "overall_efficiency": 73.38
+    },
+    {
+      "tenant_id": 7,
+      "session_id": "tenant_7",
+      "queries": 15000,
+      "successful": 15000,
+      "failed": 0,
+      "execution_time": 466.51726055145264,
+      "tool_hit_rate": 9.93,
+      "workflow_hit_rate": 56.08,
+      "overall_efficiency": 73.38
+    }
+  ],
+  "aggregate": {
+    "avg_tool_hit_rate": 9.929333333333334,
+    "avg_workflow_hit_rate": 56.076,
+    "avg_efficiency": 73.372,
+    "total_successful": 225000,
+    "total_failed": 0
+  }
+}

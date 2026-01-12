@@ -1,0 +1,94 @@
+======================================================================
+JOURNAL SUBMISSION - COMPREHENSIVE EVALUATION SUMMARY
+======================================================================
+
+EVALUATION SCALE
+----------------------------------------------------------------------
+Runs per configuration: 15
+Statistical significance: 95% and 99% confidence intervals
+
+KEY RESULTS
+----------------------------------------------------------------------
+Tool Cache Hit Rate: 5.4% (95% CI: [5.2%, 5.6%])
+Workflow Cache Hit Rate: 59.4%
+Overall Caching Efficiency: 76.5%
+
+Improvement over baseline: +5.4%
+Speedup: 13.30x
+Statistical significance: p < 0.0000
+
+
+COMPONENT CONTRIBUTIONS
+----------------------------------------------------------------------
+
+COMPONENT CONTRIBUTIONS
+----------------------------------------------------------------------
+Tool Cache: +50.2% (p=0.0000)
+Workflow Cache: +26.3% efficiency improvement
+  -> Achieved by bypassing 75.2% of tool calls
+  -> (139,611 of 185,669 tool calls saved)
+  -> Statistical significance: p=0.0000
+Adaptive TTL: +0.0% efficiency improvement
+  -> Achieved by improving tool cache hit rate by +0.1pp
+  -> Statistical significance: p=0.6824
+ [NOT SIGNIFICANT]
+
+Note: Adaptive TTL shows minimal benefit in this evaluation because:
+  - Evaluation runtime: ~160 seconds per run
+  - Base TTLs (300-3600s) already appropriate for benchmark duration
+  - Synthetic workload has stable access patterns
+  - Would likely provide more benefit in long-running production systems
+
+
+CACHE INTERACTION ANALYSIS
+----------------------------------------------------------------------
+Warning: Pairwise comparisons not computed
+
+Tool cache hit rate: 5.4%
+Workflow cache hit rate: 59.4%
+Workflow cache bypasses tool cache: 59.4%
+Tool cache only consulted: 40.6% of queries
+  -> Of those, 13.2% hit tool cache
+
+Interpretation: Workflow cache handles 59.4% of queries directly.
+Remaining 40.6% go to tool cache, achieving effective caching.
+
+
+CATEGORY ANALYSIS
+----------------------------------------------------------------------
+
+
+COST ANALYSIS
+----------------------------------------------------------------------
+Baseline cost (no caching): $8.4900 per run
+Estimated annual cost (1M queries): $849.00
+
+Cost savings by configuration:
+----------------------------------------------------------------------
+Configuration             Cost/Run     Saved/Run    Savings % 
+----------------------------------------------------------------------
+simple_memoization        $2.1040      $6.3860      75.2     %
+ttl_only_300s             $2.1040      $6.3860      75.2     %
+raw_redis                 $2.1040      $6.3860      75.2     %
+full_system               $2.2678      $6.2142      73.3     %
+tool_workflow_cache       $2.2744      $6.2077      73.2     %
+lru_512                   $2.3040      $6.1860      72.9     %
+workflow_cache_only       $2.6279      $5.8555      69.0     %
+lru_128                   $3.1011      $5.3889      63.5     %
+tool_cache_only           $3.9062      $4.5838      54.0     %
+
+Return on Investment (ROI):
+----------------------------------------------------------------------
+tool_cache_only           ROI: 117.3%
+  -> For every $1 spent, save $1.17
+workflow_cache_only       ROI: 223.1%
+  -> For every $1 spent, save $2.23
+full_system               ROI: 274.4%
+  -> For every $1 spent, save $2.74
+
+Projected Annual Savings (Full System, 1M queries):
+----------------------------------------------------------------------
+  Baseline annual cost:    $849.00
+  With full system:        $226.78
+  Annual savings:          $622.22 (73.3%)
+  Monthly savings:         $51.85

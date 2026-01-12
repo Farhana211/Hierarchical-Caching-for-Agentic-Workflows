@@ -1,0 +1,62 @@
+{
+  "no_cache": {
+    "latency": {
+      "mean": 4749.308922036489,
+      "ci95": 29.282739227103956
+    },
+    "speedup": {
+      "mean": 1.0,
+      "ci95": 0.0
+    },
+    "tool_hit_rate": 0.0,
+    "workflow_hit_rate": 0.0,
+    "efficiency": 0.0,
+    "p_vs_baseline": NaN,
+    "n": 15
+  },
+  "plan_cache": {
+    "latency": {
+      "mean": 665.698202864329,
+      "ci95": 6.841201510965441
+    },
+    "speedup": {
+      "mean": 7.136312192444322,
+      "ci95": 0.07666376586762508
+    },
+    "tool_hit_rate": 0.0,
+    "workflow_hit_rate": 58.27688888888888,
+    "efficiency": 73.28339316049049,
+    "p_vs_baseline": 3.417505605987965e-28,
+    "n": 15
+  },
+  "tool_cache": {
+    "latency": {
+      "mean": 650.0766882896423,
+      "ci95": 4.222311263377093
+    },
+    "speedup": {
+      "mean": 7.306504871181608,
+      "ci95": 0.05743683685534735
+    },
+    "tool_hit_rate": 53.17868535142075,
+    "workflow_hit_rate": 0.0,
+    "efficiency": 53.17868535142075,
+    "p_vs_baseline": 3.2969494160543093e-28,
+    "n": 15
+  },
+  "full_system": {
+    "latency": {
+      "mean": 346.6673686027527,
+      "ci95": 3.7942487386975814
+    },
+    "speedup": {
+      "mean": 13.704987228795485,
+      "ci95": 0.17401955157249113
+    },
+    "tool_hit_rate": 5.436978314971766,
+    "workflow_hit_rate": 60.399999999999984,
+    "efficiency": 77.57361138626855,
+    "p_vs_baseline": 2.012384874796617e-28,
+    "n": 15
+  }
+}

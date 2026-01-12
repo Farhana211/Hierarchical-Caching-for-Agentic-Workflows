@@ -1,0 +1,937 @@
+{
+  "zipf_low_skew": {
+    "distribution": "zipfian",
+    "alpha": 1.1,
+    "description": "Low concentration (\u03b1=1.1) - exploratory workloads",
+    "configs": {
+      "baseline_no_cache": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 775,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4819.797190189362,
+            "avg_execution_time": 0.3212363784154256,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 973,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4732.466706991196,
+            "avg_execution_time": 0.31536485722859703,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 985,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4806.886014699936,
+            "avg_execution_time": 0.3203439934253693,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "tool_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      },
+      "tool_cache_only": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 914,
+            "tool_hit_rate": 49.039929300232984,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 49.039929300232984,
+            "speedup": 6.9876295029927675,
+            "total_time": 689.7614116668701,
+            "avg_execution_time": 0.04594080187479655,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 694,
+            "tool_hit_rate": 49.776322096181495,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 49.776322096181495,
+            "speedup": 6.806571551911972,
+            "total_time": 695.2790653705597,
+            "avg_execution_time": 0.04629945553143819,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 785,
+            "tool_hit_rate": 50.26781366661256,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 50.26781366661256,
+            "speedup": 7.14996829059472,
+            "total_time": 672.2947318553925,
+            "avg_execution_time": 0.04476704104741414,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 49.694688354342354,
+            "std": 0.5045942628520722,
+            "min": 49.039929300232984,
+            "max": 50.26781366661256
+          },
+          "tool_hit_rate": {
+            "mean": 49.694688354342354,
+            "std": 0.5045942628520722
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 6.981389781833154,
+            "std": 0.14026054476009805,
+            "min": 6.806571551911972,
+            "max": 7.14996829059472
+          }
+        }
+      },
+      "full_system": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 570,
+            "tool_hit_rate": 5.718041406506737,
+            "workflow_hit_rate": 60.51333333333333,
+            "overall_efficiency": 77.08466453674122,
+            "speedup": 13.300774888164032,
+            "total_time": 362.3696537017822,
+            "avg_execution_time": 0.02413305670420329,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 101,
+            "tool_hit_rate": 5.19611129735166,
+            "workflow_hit_rate": 59.940000000000005,
+            "overall_efficiency": 77.08451503119682,
+            "speedup": 13.414270220266024,
+            "total_time": 352.7934527397156,
+            "avg_execution_time": 0.023484970696767173,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 757,
+            "tool_hit_rate": 5.163224516988675,
+            "workflow_hit_rate": 59.986666666666665,
+            "overall_efficiency": 77.04402515723271,
+            "speedup": 13.319646706598814,
+            "total_time": 360.8869004249573,
+            "avg_execution_time": 0.024027065992355347,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 77.07106824172358,
+            "std": 0.019122445834885784,
+            "min": 77.04402515723271,
+            "max": 77.08466453674122
+          },
+          "tool_hit_rate": {
+            "mean": 5.359125740282358,
+            "std": 0.2541465806401609
+          },
+          "workflow_hit_rate": {
+            "mean": 60.14666666666667,
+            "std": 0.2599715084104093
+          },
+          "speedup": {
+            "mean": 13.344897271676288,
+            "std": 0.04965541850113496,
+            "min": 13.300774888164032,
+            "max": 13.414270220266024
+          }
+        }
+      }
+    }
+  },
+  "zipf_medium_skew": {
+    "distribution": "zipfian",
+    "alpha": 1.5,
+    "description": "Medium concentration (\u03b1=1.5) - typical web access",
+    "configs": {
+      "baseline_no_cache": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 229,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4789.845693588257,
+            "avg_execution_time": 0.31925038889249163,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 834,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4799.993773937225,
+            "avg_execution_time": 0.3198827607790629,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 607,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4638.459169387817,
+            "avg_execution_time": 0.3091055965900421,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "tool_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      },
+      "tool_cache_only": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 442,
+            "tool_hit_rate": 53.983527684905816,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 53.983527684905816,
+            "speedup": 7.479196996555404,
+            "total_time": 640.4224538803101,
+            "avg_execution_time": 0.04266321708361308,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 356,
+            "tool_hit_rate": 53.36398838334947,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 53.36398838334947,
+            "speedup": 7.306620074562301,
+            "total_time": 656.9376435279846,
+            "avg_execution_time": 0.04373407394091288,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 257,
+            "tool_hit_rate": 52.65991642558663,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 52.65991642558663,
+            "speedup": 7.022074018705598,
+            "total_time": 660.5540125370026,
+            "avg_execution_time": 0.04397066888809204,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 53.33581083128064,
+            "std": 0.5407292435711699,
+            "min": 52.65991642558663,
+            "max": 53.983527684905816
+          },
+          "tool_hit_rate": {
+            "mean": 53.33581083128064,
+            "std": 0.5407292435711699
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 7.269297029941101,
+            "std": 0.18847654401262726,
+            "min": 7.022074018705598,
+            "max": 7.479196996555404
+          }
+        }
+      },
+      "full_system": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 728,
+            "tool_hit_rate": 5.532786885245901,
+            "workflow_hit_rate": 60.72,
+            "overall_efficiency": 77.73126157314226,
+            "speedup": 13.614377331634545,
+            "total_time": 351.8226046562195,
+            "avg_execution_time": 0.023419821723302207,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 634,
+            "tool_hit_rate": 5.453905700211119,
+            "workflow_hit_rate": 60.86,
+            "overall_efficiency": 78.33588647907764,
+            "speedup": 14.250939008921893,
+            "total_time": 336.81947350502014,
+            "avg_execution_time": 0.022413267310460408,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 630,
+            "tool_hit_rate": 5.084745762711865,
+            "workflow_hit_rate": 59.96666666666667,
+            "overall_efficiency": 77.66199934874633,
+            "speedup": 13.300840607919607,
+            "total_time": 348.7342872619629,
+            "avg_execution_time": 0.02320299626986186,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 77.90971580032209,
+            "std": 0.30267187899913567,
+            "min": 77.66199934874633,
+            "max": 78.33588647907764
+          },
+          "tool_hit_rate": {
+            "mean": 5.357146116056295,
+            "std": 0.19528957083392967
+          },
+          "workflow_hit_rate": {
+            "mean": 60.51555555555556,
+            "std": 0.3923087723203563
+          },
+          "speedup": {
+            "mean": 13.722052316158681,
+            "std": 0.3952781043063057,
+            "min": 13.300840607919607,
+            "max": 14.250939008921893
+          }
+        }
+      }
+    }
+  },
+  "zipf_high_skew": {
+    "distribution": "zipfian",
+    "alpha": 1.9,
+    "description": "High concentration (\u03b1=1.9) - specialized agents",
+    "configs": {
+      "baseline_no_cache": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 741,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4754.551497220993,
+            "avg_execution_time": 0.3168619379043579,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 923,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4778.102776288986,
+            "avg_execution_time": 0.318410928996404,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 324,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4865.032073497772,
+            "avg_execution_time": 0.32419585437774656,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "tool_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      },
+      "tool_cache_only": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 293,
+            "tool_hit_rate": 55.77403497461519,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 55.77403497461519,
+            "speedup": 7.756970095406635,
+            "total_time": 612.9392583370209,
+            "avg_execution_time": 0.040829061683019,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 859,
+            "tool_hit_rate": 54.94150867285196,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 54.94150867285196,
+            "speedup": 7.58132749731866,
+            "total_time": 630.2461907863617,
+            "avg_execution_time": 0.04196470797856649,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 93,
+            "tool_hit_rate": 55.61920129084308,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 55.61920129084308,
+            "speedup": 7.796677522069507,
+            "total_time": 623.9878537654877,
+            "avg_execution_time": 0.041538823239008586,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 55.44491497943674,
+            "std": 0.36153081891646105,
+            "min": 54.94150867285196,
+            "max": 55.77403497461519
+          },
+          "tool_hit_rate": {
+            "mean": 55.44491497943674,
+            "std": 0.36153081891646105
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 7.711658371598268,
+            "std": 0.09357269019648819,
+            "min": 7.58132749731866,
+            "max": 7.796677522069507
+          }
+        }
+      },
+      "full_system": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 456,
+            "tool_hit_rate": 5.549664192294097,
+            "workflow_hit_rate": 60.60666666666666,
+            "overall_efficiency": 78.33279273434965,
+            "speedup": 14.272012378031597,
+            "total_time": 333.1381287574768,
+            "avg_execution_time": 0.022178193950653076,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 975,
+            "tool_hit_rate": 5.405405405405405,
+            "workflow_hit_rate": 60.699999999999996,
+            "overall_efficiency": 78.42660178426601,
+            "speedup": 14.167833638735871,
+            "total_time": 337.25006222724915,
+            "avg_execution_time": 0.022440902185440065,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 47,
+            "tool_hit_rate": 5.993150684931506,
+            "workflow_hit_rate": 60.94666666666667,
+            "overall_efficiency": 77.9553485383874,
+            "speedup": 14.069596568603831,
+            "total_time": 345.78333854675293,
+            "avg_execution_time": 0.023002501964569093,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 78.23824768566769,
+            "std": 0.2036729078866223,
+            "min": 77.9553485383874,
+            "max": 78.42660178426601
+          },
+          "tool_hit_rate": {
+            "mean": 5.649406760877003,
+            "std": 0.25009673247491043
+          },
+          "workflow_hit_rate": {
+            "mean": 60.75111111111111,
+            "std": 0.1434323516720485
+          },
+          "speedup": {
+            "mean": 14.169814195123768,
+            "std": 0.08264777443778563,
+            "min": 14.069596568603831,
+            "max": 14.272012378031597
+          }
+        }
+      }
+    }
+  },
+  "uniform": {
+    "distribution": "uniform",
+    "alpha": null,
+    "description": "Uniform distribution - maximum diversity",
+    "configs": {
+      "baseline_no_cache": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 60,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4708.062442302704,
+            "avg_execution_time": 0.31377225941022235,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 325,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4887.279052019119,
+            "avg_execution_time": 0.32567131849924724,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 353,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4661.963941574097,
+            "avg_execution_time": 0.3106585912545522,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "tool_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      },
+      "tool_cache_only": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 638,
+            "tool_hit_rate": 43.74352847471127,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 43.74352847471127,
+            "speedup": 6.107335944199513,
+            "total_time": 770.8864364624023,
+            "avg_execution_time": 0.05135200049082438,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 277,
+            "tool_hit_rate": 46.08576715745434,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 46.08576715745434,
+            "speedup": 6.675491294005638,
+            "total_time": 732.1227512359619,
+            "avg_execution_time": 0.04874409945805867,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 228,
+            "tool_hit_rate": 44.895666131621184,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 44.895666131621184,
+            "speedup": 6.188732250164617,
+            "total_time": 753.2986972332001,
+            "avg_execution_time": 0.050161141014099124,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 44.90832058792893,
+            "std": 0.9562568041353866,
+            "min": 43.74352847471127,
+            "max": 46.08576715745434
+          },
+          "tool_hit_rate": {
+            "mean": 44.90832058792893,
+            "std": 0.9562568041353866
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 6.323853162789923,
+            "std": 0.2508563614897996,
+            "min": 6.107335944199513,
+            "max": 6.675491294005638
+          }
+        }
+      },
+      "full_system": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 241,
+            "tool_hit_rate": 5.129053606882859,
+            "workflow_hit_rate": 60.46,
+            "overall_efficiency": 77.00513314084056,
+            "speedup": 13.050358519400392,
+            "total_time": 360.7611572742462,
+            "avg_execution_time": 0.024014998308817547,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 533,
+            "tool_hit_rate": 5.052560189894879,
+            "workflow_hit_rate": 59.89333333333333,
+            "overall_efficiency": 77.2874756651525,
+            "speedup": 13.599816272650472,
+            "total_time": 359.3636085987091,
+            "avg_execution_time": 0.02391325902938843,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 227,
+            "tool_hit_rate": 6.160685932041917,
+            "workflow_hit_rate": 59.04666666666667,
+            "overall_efficiency": 76.1635879648302,
+            "speedup": 12.120949815366977,
+            "total_time": 384.62034845352173,
+            "avg_execution_time": 0.02559554271697998,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 76.81873225694108,
+            "std": 0.47738164876948985,
+            "min": 76.1635879648302,
+            "max": 77.2874756651525
+          },
+          "tool_hit_rate": {
+            "mean": 5.447433242939886,
+            "std": 0.5053116923207459
+          },
+          "workflow_hit_rate": {
+            "mean": 59.79999999999999,
+            "std": 0.580753023301708
+          },
+          "speedup": {
+            "mean": 12.923708202472612,
+            "std": 0.6103505695925846,
+            "min": 12.120949815366977,
+            "max": 13.599816272650472
+          }
+        }
+      }
+    }
+  },
+  "bimodal": {
+    "distribution": "bimodal",
+    "alpha": null,
+    "description": "80% concentrated + 20% exploratory",
+    "configs": {
+      "baseline_no_cache": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 1023,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4760.567508220673,
+            "avg_execution_time": 0.31726770361264545,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 850,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4854.2453491687775,
+            "avg_execution_time": 0.32347833778063456,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 841,
+            "tool_hit_rate": 0.0,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 0.0,
+            "speedup": 1.0,
+            "total_time": 4621.524240970612,
+            "avg_execution_time": 0.3079702382882436,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "tool_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      },
+      "tool_cache_only": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 406,
+            "tool_hit_rate": 50.23037749575621,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 50.23037749575621,
+            "speedup": 6.859873924612479,
+            "total_time": 693.9730322360992,
+            "avg_execution_time": 0.04622783045768738,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 155,
+            "tool_hit_rate": 50.31035872632004,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 50.31035872632004,
+            "speedup": 6.9363801215517125,
+            "total_time": 699.8240096569061,
+            "avg_execution_time": 0.046588063844045007,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 845,
+            "tool_hit_rate": 50.296902583854916,
+            "workflow_hit_rate": 0.0,
+            "overall_efficiency": 50.296902583854916,
+            "speedup": 6.615445130325169,
+            "total_time": 698.5961110591888,
+            "avg_execution_time": 0.04651155382792155,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 50.27921293531039,
+            "std": 0.034966098436894265,
+            "min": 50.23037749575621,
+            "max": 50.31035872632004
+          },
+          "tool_hit_rate": {
+            "mean": 50.27921293531039,
+            "std": 0.034966098436894265
+          },
+          "workflow_hit_rate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "speedup": {
+            "mean": 6.8038997254964535,
+            "std": 0.1368689162992723,
+            "min": 6.615445130325169,
+            "max": 6.9363801215517125
+          }
+        }
+      },
+      "full_system": {
+        "num_runs": 3,
+        "individual_runs": [
+          {
+            "run_id": 0,
+            "seed": 1038,
+            "tool_hit_rate": 5.691594970218398,
+            "workflow_hit_rate": 60.03333333333334,
+            "overall_efficiency": 76.99015016954625,
+            "speedup": 13.115472926212005,
+            "total_time": 362.97337770462036,
+            "avg_execution_time": 0.02415852115948995,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 1,
+            "seed": 746,
+            "tool_hit_rate": 5.5591890124264225,
+            "workflow_hit_rate": 60.14000000000001,
+            "overall_efficiency": 76.72094147992907,
+            "speedup": 13.449490650609102,
+            "total_time": 360.9241030216217,
+            "avg_execution_time": 0.024018472305933635,
+            "cost_savings_pct": 0.0
+          },
+          {
+            "run_id": 2,
+            "seed": 280,
+            "tool_hit_rate": 5.114579873796081,
+            "workflow_hit_rate": 59.833333333333336,
+            "overall_efficiency": 76.91686192130564,
+            "speedup": 12.6790187404461,
+            "total_time": 364.5017280578613,
+            "avg_execution_time": 0.024250829442342123,
+            "cost_savings_pct": 0.0
+          }
+        ],
+        "statistics": {
+          "overall_efficiency": {
+            "mean": 76.87598452359366,
+            "std": 0.11364139760412617,
+            "min": 76.72094147992907,
+            "max": 76.99015016954625
+          },
+          "tool_hit_rate": {
+            "mean": 5.4551212854803,
+            "std": 0.24679164521057506
+          },
+          "workflow_hit_rate": {
+            "mean": 60.00222222222223,
+            "std": 0.1271142190762252
+          },
+          "speedup": {
+            "mean": 13.08132743908907,
+            "std": 0.3154691498976332,
+            "min": 12.6790187404461,
+            "max": 13.449490650609102
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "write_4pct": {
+    "write_ratio": 0.04,
+    "actual_write_ratio": 0.04,
+    "write_count": 600,
+    "num_runs": 3,
+    "configs": {
+      "baseline_no_cache": {
+        "overall_efficiency": 0.0,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 0.0,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "tool_cache_only": {
+        "overall_efficiency": 52.66467790050794,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 52.66467790050794,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "full_system": {
+        "overall_efficiency": 77.73293513062661,
+        "overall_efficiency_std": 0.004660184592699426,
+        "tool_hit_rate": 5.298089026204372,
+        "tool_hit_rate_std": 0.019819782670429848,
+        "workflow_hit_rate": 60.53333333333333,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      }
+    },
+    "efficiency_degradation_pp": 0.0
+  },
+  "write_10pct": {
+    "write_ratio": 0.1,
+    "actual_write_ratio": 0.1,
+    "write_count": 1500,
+    "num_runs": 3,
+    "configs": {
+      "baseline_no_cache": {
+        "overall_efficiency": 0.0,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 0.0,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "tool_cache_only": {
+        "overall_efficiency": 40.18102472927105,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 40.18102472927105,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "full_system": {
+        "overall_efficiency": 71.12045724145368,
+        "overall_efficiency_std": 0.009339214965863651,
+        "tool_hit_rate": 5.679317073159388,
+        "tool_hit_rate_std": 0.00173199502121738,
+        "workflow_hit_rate": 54.151111111111106,
+        "workflow_hit_rate_std": 0.0038490017945940046,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      }
+    },
+    "efficiency_degradation_pp": 6.612477889172936
+  },
+  "write_20pct": {
+    "write_ratio": 0.2,
+    "actual_write_ratio": 0.18181818181818182,
+    "write_count": 3000,
+    "num_runs": 3,
+    "configs": {
+      "baseline_no_cache": {
+        "overall_efficiency": 0.0,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 0.0,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "tool_cache_only": {
+        "overall_efficiency": 33.08270676691729,
+        "overall_efficiency_std": 0.007229612492771764,
+        "tool_hit_rate": 33.08270676691729,
+        "tool_hit_rate_std": 0.007229612492771764,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "full_system": {
+        "overall_efficiency": 65.7068441614817,
+        "overall_efficiency_std": 0.007234843003899982,
+        "tool_hit_rate": 4.876569204498844,
+        "tool_hit_rate_std": 0.03223008310143002,
+        "workflow_hit_rate": 49.8020202020202,
+        "workflow_hit_rate_std": 0.009257728676677799,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      }
+    },
+    "efficiency_degradation_pp": 12.026090969144917
+  },
+  "write_30pct": {
+    "write_ratio": 0.3,
+    "actual_write_ratio": 0.25,
+    "write_count": 4500,
+    "num_runs": 3,
+    "configs": {
+      "baseline_no_cache": {
+        "overall_efficiency": 0.0,
+        "overall_efficiency_std": 0.0,
+        "tool_hit_rate": 0.0,
+        "tool_hit_rate_std": 0.0,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "tool_cache_only": {
+        "overall_efficiency": 28.16080707933816,
+        "overall_efficiency_std": 0.007531801828837235,
+        "tool_hit_rate": 28.16080707933816,
+        "tool_hit_rate_std": 0.007531801828837235,
+        "workflow_hit_rate": 0.0,
+        "workflow_hit_rate_std": 0.0,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      },
+      "full_system": {
+        "overall_efficiency": 61.48776508972268,
+        "overall_efficiency_std": 0.013050570962480634,
+        "tool_hit_rate": 4.188311982649697,
+        "tool_hit_rate_std": 0.001359841624481511,
+        "workflow_hit_rate": 46.30925925925926,
+        "workflow_hit_rate_std": 0.00848625128695426,
+        "speedup": 1.0,
+        "speedup_std": 0.0,
+        "invalidations_total": 0.0,
+        "invalidations_per_1k": 0.0,
+        "avg_invalidation_time_ms": 0.0
+      }
+    },
+    "efficiency_degradation_pp": 16.245170040903936
+  }
+}

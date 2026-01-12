@@ -5,11 +5,7 @@ from typing import Dict
 def analyze_fair_comparison(summary_file: str):
     with open(summary_file, 'r') as f:
         data = json.load(f)
-
-    print("FAIR COMPARISON ANALYSIS")
     print("\n1. BASELINE SYSTEM ADVANTAGES")
-
-    
     baselines = {
         "simple_memoization": {
             "advantages": [
@@ -43,7 +39,6 @@ def analyze_fair_comparison(summary_file: str):
     }
     
     for system, info in baselines.items():
-        print(f"\n{system}:")
         print(f"  Efficiency: {info['efficiency']:.1f}%")
         if 'advantages' in info:
             print(f"  Advantages:")
@@ -55,22 +50,13 @@ def analyze_fair_comparison(summary_file: str):
                 print(f" {dis}")
     
     print("\n\n2. PRODUCTION SAFETY COST ANALYSIS")
-    
     simple_memo_eff = data["simple_memoization"]["overall_caching_efficiency"]["mean"]
     our_system_eff = data["full_system"]["overall_caching_efficiency"]["mean"]
-    
     efficiency_gap = simple_memo_eff - our_system_eff
     efficiency_gap_pct = (efficiency_gap / simple_memo_eff) * 100
-    
     print(f"\nSimple Memoization (no constraints): {simple_memo_eff:.1f}%")
     print(f"Our System (production-safe):         {our_system_eff:.1f}%")
-    print(f"Efficiency Cost:                      {efficiency_gap:.1f}% ({efficiency_gap_pct:.1f}% relative)")
-    
-    print("\nProduction Constraints in Our System:")
-    print(" TTL-based expiration (300-3600s depending on tool)")
-    print(" Session isolation (prevents cross-user cache sharing)")
-    print(" Dependency tracking (invalidates on writes)")
-    print(" Bounded memory (production-safe)")  
+    print(f"Efficiency Cost:                      {efficiency_gap:.1f}% ({efficiency_gap_pct:.1f}% relative)")  
     print(f"\nConclusion: {efficiency_gap:.1f}% is the cost of production safety")
     
 
@@ -80,12 +66,9 @@ def analyze_fair_comparison(summary_file: str):
     tools_saved = workflow_contrib["tools_saved_total"]
     tools_attempted = workflow_contrib["tools_attempted_total"]
     total_potential = workflow_contrib["total_would_need"]
-    
     tool_cache_hits = tools_attempted * (data["full_system"]["tool_cache_hit_rate"]["mean"] / 100)
-    
     total_work_avoided = tools_saved + tool_cache_hits
     effective_hit_rate = (total_work_avoided / total_potential) * 100
-    
     print(f"\nWorkflow cache saved:    {tools_saved:,} tool calls")
     print(f"Tool cache saved:        {tool_cache_hits:,.0f} tool calls")
     print(f"Total work avoided:      {total_work_avoided:,.0f} calls")
@@ -94,9 +77,7 @@ def analyze_fair_comparison(summary_file: str):
     print(f"Reported Efficiency:     {our_system_eff:.1f}%")
     
     print("\n\n4. CATEGORY ANALYSIS WITH WORKFLOW IMPACT")
-    
-    categories = data["full_system"]["category_breakdown"]
-    
+    categories = data["full_system"]["category_breakdown"] 
     print("\nPer-category performance:")
     print(f"{'Category':<15} {'Direct Calls':<15} {'Direct Hit Rate':<20}")
     
@@ -104,12 +85,7 @@ def analyze_fair_comparison(summary_file: str):
         calls = metrics["total_calls"]
         hit_rate = metrics["avg_hit_rate"]
         print(f"{cat:<15} {calls:<15,} {hit_rate:<20.1f}%")
-    
-    print("\nNote: Categories with 0% hit rate are primarily served by")
-    print("workflow cache, which doesn't break down by individual tool category.")
-    
     print("\n\n5. FAIR COMPARISON: Production-Constrained Systems")
-    
     print("\nSystems with production constraints:")
     print(f"  LRU-512 (capacity-constrained):  {data['lru_512']['overall_caching_efficiency']['mean']:.1f}%")
     print(f"  Our System (full constraints):   {our_system_eff:.1f}%")
@@ -118,11 +94,8 @@ def analyze_fair_comparison(summary_file: str):
     print(f"\nOur advantage over constrained baseline: {lru_diff:+.1f}%")
     
     print("\n\n6. VALUE OF MULTI-LEVEL ARCHITECTURE")
-    print("-"*70)
-    
     tool_only_eff = data["tool_cache_only"]["overall_caching_efficiency"]["mean"]
     tool_workflow_eff = data["tool_workflow_cache"]["overall_caching_efficiency"]["mean"]
-    
     workflow_value = tool_workflow_eff - tool_only_eff
     
     print(f"\nTool cache only:               {tool_only_eff:.1f}%")
@@ -134,9 +107,6 @@ def analyze_fair_comparison(summary_file: str):
     print(f"additional value (+{workflow_value:.1f}% points) beyond tool-level caching.")
     
     # 7. Final verdict
-    print("\n\n" + "="*70)
-    print("FINAL VERDICT")
-    print("="*70)
     
     print(f"\n Our system achieves {our_system_eff:.1f}% efficiency")
     print(f" Simple memo achieves {simple_memo_eff:.1f}% (but not production-safe)")
@@ -147,8 +117,6 @@ def analyze_fair_comparison(summary_file: str):
     
     print("\nRECOMMENDATION: Report effective hit rate ({:.1f}%) as primary metric".format(effective_hit_rate))
     print("and explain the {:.1f}% gap with simple memoization as the cost".format(efficiency_gap))
-    print("of production safety (TTL, session isolation, consistency).")
-
 
 if __name__ == "__main__":
     import sys

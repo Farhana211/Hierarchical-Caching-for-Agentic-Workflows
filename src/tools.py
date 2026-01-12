@@ -83,11 +83,11 @@ def run_tool_with_timeout(tool_func, tool_name, timeout, *args, **kwargs):
             result = future.result(timeout=timeout)
             return result
         except TimeoutError:
-            logger.error(f"⏱ TIMEOUT: {tool_name} exceeded {timeout}s timeout")
+            logger.error(f" TIMEOUT: {tool_name} exceeded {timeout}s timeout")
             future.cancel()  # Attempt to cancel (may not work if already running)
             return {"error": f"Tool execution timed out after {timeout}s", "timed_out": True}
         except Exception as e:
-            logger.error(f"🔥 TOOL ERROR in {tool_name}: {e}")
+            logger.error(f" TOOL ERROR in {tool_name}: {e}")
             return {"error": f"Tool execution failed: {str(e)}"}
         finally:
             # Ensure executor shuts down cleanly

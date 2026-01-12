@@ -133,18 +133,18 @@ def generate_persona_workload(user_config, num_queries=15000):
     for i, q in enumerate(questions):
         rand = random.random()
         
-        # Option 1: Repeat recent query (INTRA-SESSION)
+        # Repeat recent query
         if rand < persona['repeat_probability'] and len(recent_queries) > 0:
             q_to_use = random.choice(recent_queries[-10:])
             q_to_use = q_to_use.copy()
             q_to_use['id'] = f"persona_repeat_{i}"
             q_to_use['is_persona_repeat'] = True
-            q_to_use['is_intra_session_repeat'] = True  # MARK AS INTRA-SESSION
+            q_to_use['is_intra_session_repeat'] = True
             modified_questions.append(q_to_use)
             recent_queries.append(q_to_use)
             intra_session_repeats += 1
             
-        # Option 2: Use preferred tools
+        # Use preferred tools
         elif rand < persona['concentration']:
             if any(tool in q.get('expected_tools', []) for tool in persona['preferred_tools']):
                 modified_questions.append(q)
@@ -153,7 +153,7 @@ def generate_persona_workload(user_config, num_queries=15000):
                 modified_questions.append(q)
                 recent_queries.append(q)
         
-        # Option 3: Keep original
+        # Keep original
         else:
             modified_questions.append(q)
             recent_queries.append(q)
@@ -322,7 +322,7 @@ def run_personalized_memory_experiment():
         result = evaluate_single_user(user_config, cache_mode="isolated")
         isolated_results.append(result)
         
-        logger.info(f"✓ User {result['user_id']} complete: "
+        logger.info(f"  User {result['user_id']} complete: "
                    f"Efficiency={result['observed_efficiency']:.1f}%, "
                    f"Intra-session={result['intra_session_hit_rate']:.1f}%")
     
@@ -336,7 +336,7 @@ def run_personalized_memory_experiment():
         result = evaluate_single_user(user_config, cache_mode="shared")
         shared_results.append(result)
         
-        logger.info(f"✓ User {result['user_id']} complete: "
+        logger.info(f"  User {result['user_id']} complete: "
                    f"Efficiency={result['observed_efficiency']:.1f}%, "
                    f"Intra-session={result['intra_session_hit_rate']:.1f}%")
     
@@ -402,13 +402,11 @@ def run_personalized_memory_experiment():
     with open(output_file, 'w') as f:
         json.dump(output, indent=2, fp=f)
     
-    logger.info(f"\n✅ Personalized memory experiment complete")
+    logger.info(f"\n Personalized memory experiment complete")
     logger.info(f"Results saved to: {output_file}")
     
     # Print summary with TRUE INTER-SESSION GAIN
-    print("\n" + "="*120)
     print("PERSONALIZED MEMORY EFFECTS - ISOLATED vs SHARED CACHE ANALYSIS")
-    print("="*120)
     print(f"{'Persona':<20} {'Users':<8} {'Isolated':<20} {'Shared':<20} {'Intra-Session':<20} {'Inter-Gain':<20}")
     print("-"*120)
     
@@ -419,13 +417,6 @@ def run_personalized_memory_experiment():
               f"{stats['mean_shared_efficiency']:>6.1f}% ± {stats['std_shared_efficiency']:.1f}  "
               f"{stats['mean_intra_session_rate']:>6.1f}% ± {stats['std_intra_session_rate']:.1f}  "
               f"{inter_stats['mean_inter_session_gain']:>+6.1f}% ± {inter_stats['std_inter_session_gain']:.1f}")
-    
-    print("="*120)
-    print("\nKEY INSIGHTS:")
-    print("  • Isolated: Each user has their own cache (no sharing)")
-    print("  • Shared: All users share a global cache (help each other)")
-    print("  • Intra-session rate: Hit rate from user's OWN repeated queries")
-    print("  • Inter-session gain: TRUE benefit from shared cache = Shared - Isolated")
     
     # Variance analysis
     all_isolated = [r['observed_efficiency'] for r in isolated_results]

@@ -131,15 +131,11 @@ def run_multitenant_heterogeneous_test():
     efficiencies = [r['efficiency'] for r in results]
     variance = np.var(efficiencies)
     
-    print("\n" + "="*70)
     print("HETEROGENEOUS TENANT RESULTS")
-    print("="*70)
     print(f"Mean Efficiency: {np.mean(efficiencies):.1f}%")
     print(f"Std Dev: {np.std(efficiencies):.1f}%")
     print(f"Range: {np.min(efficiencies):.1f}% - {np.max(efficiencies):.1f}%")
     print(f"Variance: {variance:.1f}")
-    print("\nKEY FINDING: Variance proves system handles heterogeneous workloads")
-    
     # Save
     output = {"tenants": results, "summary": {
         "mean": np.mean(efficiencies),
@@ -149,9 +145,9 @@ def run_multitenant_heterogeneous_test():
     
     output_file = f"multitenant_heterogeneous_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     with open(output_file, 'w') as f:
-        json.dump(output, f, indent=2)  # ✅ FIXED: Added 'f' file handle
+        json.dump(output, f, indent=2)  
     
-    logger.info(f"\n✅ Results saved to {output_file}")
+    logger.info(f"\n Results saved to {output_file}")
     return output
 
 if __name__ == "__main__":

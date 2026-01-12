@@ -756,7 +756,7 @@ def plot_figure8():
             ci_widths_y.append(time_ci)
 
         except KeyError as e:
-            print(f"⚠️ Skipping {config} due to missing data: {e}")
+            print(f" Skipping {config} due to missing data: {e}")
             continue
 
     # Handle case where no valid data

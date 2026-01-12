@@ -947,12 +947,8 @@ class ComprehensiveEvaluator:
     
     def _generate_paper_summary(self, summary: Dict, filename: str):       
         with open(filename, 'w') as f:
-            f.write("="*70 + "\n")
-            f.write("JOURNAL SUBMISSION - COMPREHENSIVE EVALUATION SUMMARY\n")
-            f.write("="*70 + "\n\n")
-            
+            f.write(" SUBMISSION - COMPREHENSIVE EVALUATION SUMMARY\n")        
             f.write("EVALUATION SCALE\n")
-            f.write("-"*70 + "\n")
             f.write(f"Runs per configuration: {self.num_runs}\n")
             f.write(f"Statistical significance: 95% and 99% confidence intervals\n\n")
             
@@ -961,7 +957,6 @@ class ComprehensiveEvaluator:
                 baseline = summary.get("baseline_no_cache", {})
                 
                 f.write("KEY RESULTS\n")
-                f.write("-"*70 + "\n")
                 
                 if "tool_cache_hit_rate" in full:
                     tool_hr = full["tool_cache_hit_rate"]["mean"]
@@ -996,16 +991,13 @@ class ComprehensiveEvaluator:
             
             if "pairwise_comparisons" in summary:
                 f.write("\nCOMPONENT CONTRIBUTIONS\n")
-                f.write("-"*70 + "\n")
                 comparisons = summary["pairwise_comparisons"]
 
                 if comparisons is None:
                     f.write("\nCOMPONENT CONTRIBUTIONS\n")
-                    f.write("-"*70 + "\n")
                     f.write("Warning: Pairwise comparisons not available\n\n")
                 else:
                     f.write("\nCOMPONENT CONTRIBUTIONS\n")
-                    f.write("-"*70 + "\n")
 
                 if "tool_cache_contribution" in comparisons:
                     tc = comparisons["tool_cache_contribution"]
@@ -1034,17 +1026,11 @@ class ComprehensiveEvaluator:
                     if not ac.get('significant', False):
                         
                         f.write(f" [NOT SIGNIFICANT]\n")
-                        f.write(f"\nNote: Adaptive TTL shows minimal benefit in this evaluation because:\n")
-                        f.write(f"  - Evaluation runtime: ~160 seconds per run\n")
-                        f.write(f"  - Base TTLs (300-3600s) already appropriate for benchmark duration\n")
-                        f.write(f"  - Synthetic workload has stable access patterns\n")
-                        f.write(f"  - Would likely provide more benefit in long-running production systems\n")
+                        f.write(f"\nNote: Adaptive TTL shows minimal benefit in this evaluation:\n")
                     else:
                         f.write(f"\n")
     
             f.write("\n\nCACHE INTERACTION ANALYSIS\n")
-            f.write("-"*70 + "\n")
-            f.write("Warning: Pairwise comparisons not computed\n\n")
             
             if "full_system" in summary:
                 full = summary["full_system"]
@@ -1059,12 +1045,9 @@ class ComprehensiveEvaluator:
                 f.write(f"\nInterpretation: Workflow cache handles {wf_hr:.1f}% of queries directly.\n")
                 f.write(f"Remaining {100 - wf_hr:.1f}% go to tool cache, achieving effective caching.\n")       
             f.write("\n\nCATEGORY ANALYSIS\n")
-            f.write("-"*70 + "\n")
-
 
             if "cost_comparisons" in summary and summary["cost_comparisons"]:
                 f.write("\n\nCOST ANALYSIS\n")
-                f.write("-"*70 + "\n")
                 
 
                 if "baseline_no_cache" in summary and "cost_analysis" in summary["baseline_no_cache"]:
@@ -1073,10 +1056,7 @@ class ComprehensiveEvaluator:
                     f.write(f"Estimated annual cost (1M queries): ${baseline_cost * 100:.2f}\n\n")
                 
                 f.write("Cost savings by configuration:\n")
-                f.write("-"*70 + "\n")
-                f.write(f"{'Configuration':<25} {'Cost/Run':<12} {'Saved/Run':<12} {'Savings %':<10}\n")
-                f.write("-"*70 + "\n")
-                
+                f.write(f"{'Configuration':<25} {'Cost/Run':<12} {'Saved/Run':<12} {'Savings %':<10}\n")             
                 sorted_configs = sorted(
                     summary["cost_comparisons"].items(), 
                     key=lambda x: x[1]["vs_baseline_savings_pct"], 
@@ -1090,10 +1070,7 @@ class ComprehensiveEvaluator:
                     
                     f.write(f"{config_name:<25} ${cost:<11.4f} ${saved:<11.4f} {pct:<9.1f}%\n")
                 
-                f.write("\n")
-                
                 f.write("Return on Investment (ROI):\n")
-                f.write("-"*70 + "\n")
                 
                 for config_name in ["tool_cache_only", "workflow_cache_only", "full_system"]:
                     if config_name in summary["cost_comparisons"]:
@@ -1102,17 +1079,13 @@ class ComprehensiveEvaluator:
                         f.write(f"{config_name:<25} ROI: {roi_pct:.1f}%\n")
                         if roi_pct > 0:
                             f.write(f"  -> For every $1 spent, save ${roi_pct/100:.2f}\n")
+            
                 
-                f.write("\n")
-                
-
                 if "full_system" in summary["cost_comparisons"]:
                     full_comp = summary["cost_comparisons"]["full_system"]
                     full_savings_pct = full_comp["vs_baseline_savings_pct"]
                     
                     f.write(f"Projected Annual Savings (Full System, 1M queries):\n")
-                    f.write("-"*70 + "\n")
-                    
                     if "baseline_no_cache" in summary and "cost_analysis" in summary["baseline_no_cache"]:
                         baseline_cost = summary["baseline_no_cache"]["cost_analysis"]["avg_total_cost_usd"]
                         annual_baseline = baseline_cost * 100

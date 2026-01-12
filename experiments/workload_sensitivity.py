@@ -39,7 +39,7 @@ def run_single_config_helper(config_name, questions, session_id, run_id=0):
             name="full_system",
             tool_cache_enabled=True,
             workflow_cache_enabled=True,
-            adaptive_ttl_enabled=False,  # ✅ FIXED: Set to False per Academic Editor
+            adaptive_ttl_enabled=False, 
             description="Full system"
         )
     else:
@@ -54,7 +54,7 @@ def run_single_config_helper(config_name, questions, session_id, run_id=0):
             use_real_apis=False,
             enable_tool_cache=config.tool_cache_enabled,
             enable_workflow_cache=config.workflow_cache_enabled,
-            enable_adaptive_ttl=config.adaptive_ttl_enabled,  # ✅ Uses False now
+            enable_adaptive_ttl=config.adaptive_ttl_enabled, 
             use_redis=True,
             enable_detailed_logging=False
         )
@@ -126,7 +126,7 @@ def run_workload_sensitivity_analysis():
             "configs": {}
         }
         
-        # ✅ FIXED: Store baseline times for speedup calculation
+        # Store baseline times for speedup calculation
         baseline_times = []
         
         # Test each system configuration under this workload
@@ -164,14 +164,14 @@ def run_workload_sensitivity_analysis():
                     run_id=run_id
                 )
                 
-                # ✅ FIXED: Get total time for speedup calculation
+                #  Get total time for speedup calculation
                 total_time = run_result.get('total_time', 0.0)
                 
-                # ✅ FIXED: Store baseline time for this run
+                # Store baseline time for this run
                 if config_name == "baseline_no_cache":
                     baseline_times.append(total_time)
                 
-                # ✅ FIXED: Calculate speedup against baseline
+                # Calculate speedup against baseline
                 if config_name == "baseline_no_cache":
                     speedup = 1.0  # Baseline is always 1.0x
                 else:
@@ -186,8 +186,8 @@ def run_workload_sensitivity_analysis():
                     "tool_hit_rate": run_result.get('tool_cache_hit_rate', 0.0),
                     "workflow_hit_rate": run_result.get('workflow_cache_hit_rate', 0.0),
                     "overall_efficiency": run_result.get('overall_caching_efficiency', 0.0),
-                    "speedup": speedup,  # ✅ FIXED: Now calculated correctly
-                    "total_time": total_time,  # ✅ ADDED: For transparency
+                    "speedup": speedup,  # Now calculated correctly
+                    "total_time": total_time,  # For transparency
                     "avg_execution_time": run_result.get('avg_execution_time', 0.0),
                     "cost_savings_pct": run_result.get('cost_savings_pct', 0.0)
                 })
@@ -198,7 +198,7 @@ def run_workload_sensitivity_analysis():
             efficiencies = [r['overall_efficiency'] for r in config_results]
             tool_hits = [r['tool_hit_rate'] for r in config_results]
             wf_hits = [r['workflow_hit_rate'] for r in config_results]
-            speedups = [r['speedup'] for r in config_results]  # ✅ ADDED
+            speedups = [r['speedup'] for r in config_results]  
             
             results[workload_name]['configs'][config_name] = {
                 "num_runs": num_runs,
@@ -218,7 +218,7 @@ def run_workload_sensitivity_analysis():
                         "mean": np.mean(wf_hits),
                         "std": np.std(wf_hits)
                     },
-                    "speedup": {  # ✅ ADDED
+                    "speedup": {  
                         "mean": np.mean(speedups),
                         "std": np.std(speedups),
                         "min": np.min(speedups),
@@ -234,15 +234,12 @@ def run_workload_sensitivity_analysis():
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
     
-    logger.info(f"\n✅ Workload sensitivity analysis complete")
+    logger.info(f"\n Workload sensitivity analysis complete")
     logger.info(f"Results saved to: {output_file}")
     
     # Print comprehensive summary
-    print("\n" + "="*110)
     print("WORKLOAD SENSITIVITY ANALYSIS - FULL COMPARISON")
-    print("="*110)
     print(f"{'Workload':<20} {'Config':<20} {'Efficiency':<25} {'Speedup':<15} {'Tool Hit':<20} {'WF Hit':<20}")
-    print("-"*110)
     
     for workload_name, workload_data in results.items():
         for config_name, config_data in workload_data['configs'].items():
@@ -261,12 +258,7 @@ def run_workload_sensitivity_analysis():
     print("="*110)
     print(f"\nTotal experiments: {len(workload_configs)} workloads × {len(system_configs)} configs × {num_runs} runs")
     print(f"                 = {len(workload_configs) * len(system_configs) * num_runs} total evaluations")
-    print(f"                 = {len(workload_configs) * len(system_configs) * num_runs * 15000:,} queries processed")
-    print(f"\nKEY FINDINGS:")
-    print(f"  • Hierarchical caching provides consistent speedup across all workload distributions")
-    print(f"  • Higher skew (concentrated access) → higher efficiency")
-    print(f"  • Workflow cache provides stable hit rates (40-46%) regardless of distribution")
-    
+    print(f"                 = {len(workload_configs) * len(system_configs) * num_runs * 15000:,} queries processed") 
     return results
 
 if __name__ == "__main__":

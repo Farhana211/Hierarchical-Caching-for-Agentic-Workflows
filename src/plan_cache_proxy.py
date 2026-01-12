@@ -228,12 +228,9 @@ if __name__ == "__main__":
     print(f"\nResults saved to {filename}")
     
     # Print Publication-Ready Table
-    print("\n" + "="*120)
     print(f"PLAN CACHE vs HIERARCHICAL COMPARISON (n=15, 95% CI)")
-    print("="*120)
     headers = f"{'Configuration':<20} {'Latency (s)':<18} {'Speedup (x)':<18} {'Efficiency %':<15} {'p-value'}"
     print(headers)
-    print("-" * 120)
     
     for cfg in ['no_cache', 'plan_cache', 'tool_cache', 'full_system']:
         if cfg not in results: continue
@@ -256,4 +253,3 @@ if __name__ == "__main__":
     print("="*120)
     print("\nMetrc Definitions:")
     print("Efficiency: % of tool executions avoided (Eq. 1)")
-    print("Speedup: Ratio of No-Cache Latency to Config Latency")
